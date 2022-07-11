@@ -1,92 +1,94 @@
 {
-  "name": "EditPlace-webapp",
-  "version": "1.0.0",
-  "description": "UIWorkflow for WebApp a Web Application Development for Edit Place India.",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/epworkplace/webapp-UIWorkflow.git"
-  },
-  "keywords": [],
-  "author": "Edit Place India",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/epworkplace/webapp-UIWorkflow.git/issues"
-  },
-  "homepage": "https://github.com/epworkplace/webapp-UIWorkflow.git#readme",
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "EditPlace-webapp",
+    "version": "1.0.0",
+    "description": "UIWorkflow for WebApp a Web Application Development for Edit Place India.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "gulp"
     },
-    "extends": [],
-    "rules": {
-      "indent": 0,
-      "comma-dangle": 0,
-      "quotes": 0,
-      "import/extensions": [
-        "off",
-        "always",
-        {
-          "js": "never",
-          "vue": "never"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/epworkplace/webapp-UIWorkflow.git"
+    },
+    "keywords": [],
+    "author": "Edit Place India",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/epworkplace/webapp-UIWorkflow.git/issues"
+    },
+    "homepage": "https://github.com/epworkplace/webapp-UIWorkflow.git#readme",
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [],
+        "rules": {
+            "indent": 0,
+            "comma-dangle": 0,
+            "quotes": 0,
+            "import/extensions": [
+                "off",
+                "always",
+                {
+                    "js": "never",
+                    "vue": "never"
+                }
+            ],
+            "max-len": 0,
+            "eol-last": 0,
+            "linebreak-style": 0,
+            "import/no-unresolved": 0,
+            "no-new": 0,
+            "operator-linebreak": 0,
+            "arrow-parens": 0,
+            "no-console": 0,
+            "no-param-reassign": 0
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
         }
-      ],
-      "max-len": 0,
-      "eol-last": 0,
-      "linebreak-style": 0,
-      "import/no-unresolved": 0,
-      "no-new": 0,
-      "operator-linebreak": 0,
-      "arrow-parens": 0,
-      "no-console": 0,
-      "no-param-reassign": 0
     },
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "bootstrap": "^4.0.0-beta",
+        "browser-sync": "^2.2.0",
+        "del": "^0.1.3",
+        "gulp": "^4.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-bundle-assets": "^2.29.0",
+        "gulp-changed": "^3.1.0",
+        "gulp-filter": "^5.0.1",
+        "gulp-htmlclean": "^2.7.15",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-newer": "^1.3.0",
+        "gulp-order": "^1.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-size": "^1.3.0",
+        "gulp-sourcemaps": "^2.6.0",
+        "gulp-util": "^3.0.8",
+        "gulp-watch": "^5.0.1",
+        "jquery": "^3.2.1",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-csso": "^3.0.1",
+        "gulp-preprocess": "^3.0.2",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "node-sass": "^4.12.0",
+        "popper.js": "^1.12.5"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "global": "^4.3.2",
+        "gulp-group-concat": "^1.1.6",
+        "gulp-image": "^4.4.1",
+        "gulp-imagemin": "^5.0.3",
+        "npm-check-updates": "^3.1.4",
+        "simplebar": "^3.1.5",
+        "slick-carousel": "^1.8.1"
     }
-  },
-  "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "bootstrap": "^4.0.0-beta",
-    "browser-sync": "^2.2.0",
-    "del": "^0.1.3",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-bundle-assets": "^2.29.0",
-    "gulp-changed": "^3.1.0",
-    "gulp-filter": "^5.0.1",
-    "gulp-htmlclean": "^2.7.15",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-newer": "^1.3.0",
-    "gulp-order": "^1.2.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-size": "^1.3.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.1",
-    "jquery": "^3.2.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-csso": "^3.0.1",
-    "gulp-preprocess": "^3.0.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.12.0",
-    "popper.js": "^1.12.5"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "global": "^4.3.2",
-    "gulp-group-concat": "^1.1.6",
-    "gulp-image": "^4.4.1",
-    "gulp-imagemin": "^5.0.3",
-    "npm-check-updates": "^3.1.4",
-    "simplebar": "^3.1.5",
-    "slick-carousel": "^1.8.1"
-  }
 }
