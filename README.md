@@ -1,3 +1,3 @@
-# Image optimization tests to achieve better compressed images
+# Optimize Images
 
-**[Image-Optimization-Test](https://github.com/kathirr007/Image-Optimize-test)** is Image Optimization workflow using gulp for Web Images.
+**[Optimize Images](https://github.com/kathirr007/Optimize-Images)** is Image Optimization workflow using gulp for Web Images with best image compression algorithms.
