@@ -1,0 +1,377 @@
+<div class="job-cards-filter btn-group" role="group" style="">
+    <button type="button" class="btn btn-default cards-filter-prev" style="display: none;"><i class="material-icons">chevron_left</i></button>
+    <div class="" role="group">
+        <button type="button" class="btn btn-default cards-filter-dropup" id="cards-filter-dropup">June 2019 <span>Filter</span></button>
+        <div class="cards-filter-dropdown" style="display: none;" role="" aria-labelledby="cards-filter-dropup">
+            <form id="filterForm">
+                <div class="row nav-container cards-filter-nav" style="">
+                    <h5 class="card-title" style="">Hide Cards</h5>
+                    <a href="#" class="card-title" style="" onclick="clear_all_filters();">Clear all filters</a>
+                </div>
+                <div class="row nav-container cards-filter-nav">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="card-title" style="">BEFORE THIS DATE</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control searchinput datepicker-start" id="jobsFilterStart"
+                                    name="jobsFilterStart" placeholder="-" required>
+                                <a class="search-clear" id="searchclear" onclick="clearField('jobsFilterStart','date')">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="card-title" style="">AFTER THIS DATE</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control searchinput datepicker-end" id="jobsFilterEnd"
+                                    name="jobsFilterEnd" placeholder="-" required>
+                                <a class="search-clear" id="searchclear" onclick="clearField('jobsFilterEnd','date')">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row nav-container cards-filter-nav">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="card-title" style="">HIDE CARDS BY STATUS</h5>
+
+                            </div>
+                        </div>
+                        <div class="tab-content" style="">
+                            <div class="tab-pane active" id="filterStatus">
+                                <form id="status_filter_form">
+                                    <div class="form-group dropup" style="">
+                                        <select name="jobsFilterStatus[]" id="jobsFilterStatus" title="All status shown"
+                                            multiple class="selectpicker selectpicker_cards searchinput form-control dropup"
+                                            data-actions-box="true">
+                                            <option value="draft" data-content="<span class='label draft paused'>Draft</span>">Draft</option>
+                                            <option value="bidding" data-content="<span class='label bidding default'>Bidding</span>">Bidding</option>
+                                            <option value="writing" data-content="<span class='label writing default'>Writing</span>">Writing</option>
+                                            <option value="correction" data-content="<span class='label correct default'>Correct</span>">Correct</option>
+                                            <option value="moderation" data-content="<span class='label correct default'>Moderation</span>">Moderation</option>
+                                            <option value="delivered" data-content="<span class='label delivered delete'>Delivered</span>">Delivered</option>
+                                            <option value="validated" data-content="<span class='label validated ongoing'>Validated</span>">Validated</option>
+                                        </select>
+                                        <a class="search-clear" id="searchclear" onclick="clearField('jobsFilterStatus','status')">Clear</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row nav-container cards-filter-nav tab-content">
+                    <div class="col-md-6 pl-0">
+                        <button type="reset" class="btn btn-fill delete btn-confirm pull-left full-width" style=""
+                            onclick="undoFilter();">Undo</button>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                        <button type="button" class="btn btn-fill submit pull-right btn-yes full-width" style=""
+                            onclick=" filter();">Filter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- dropdown-menu -->
+    </div>
+    <button type="button" class="btn btn-default cards-filter-next" style="display: none;"><i class="material-icons">chevron_right</i></button>
+</div>
+<div class="col-md-12 settings-wrap mission-overview-reassign">
+    <span class="close"><a href="javascript:;"><i class="material-icons">close</i></a></span>
+    <div class="header">
+        <strong class="primary-font">Reassignment Settings</strong>
+    </div>
+    <div class="mission-container">
+        <div class="card-section-list">
+            <ul>
+                <li>
+                    <div class="col-md-12 card card-mission">
+                        <div class="col-md-1 list-image-container">
+                            <div class="list-image" id="missionImage123" data-value="60">
+                                <img src="lbd/img/webedia.jpg" alt="" class="img-circle" data-toggle="tooltip"
+                                    data-placement="bottom" title="Progress: 60%" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 list-head-container">
+                            <a href="javascript:;">
+                                <div class="header">
+                                    <div class="status-label">
+                                        <span class="label not-started">Not Started</span>
+                                        <span class="dates">
+                                            <span>May 01 2019</span><i class="material-icons">keyboard_arrow_right</i><span
+                                                class="due">Jul 03 2019 (+3 days)</span>
+                                        </span>
+                                    </div>
+                                    <strong class="primary-font">Aricles blog - FRENCH</strong>
+                                    <div class="brief">
+                                        Editorial - Blog Articles - 400 Words
+                                    </div>
+                                    <div class="language">
+                                        <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="French">
+                                            <img src="lbd/img/flag/fr.gif" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="task-price">
+                            <div class="col-md-2 numbers">
+                                <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="40 ART. / 3 Days">
+                                    20<small><i class="material-icons">autorenew</i></small><span>articles</span>
+                                </a>
+                            </div>
+                            <div class="col-md-2 turnover">
+                                36,500.00 &#8364;<span>60.00 % margin</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-12 progress-steps reassigning-form">
+        <div id="wizardCard">
+            <form id="wizardForm" method="" action="">
+                <div class="tab-links">
+                    <ul class="nav">
+                        <li><a href="#tab-setting-1" data-toggle="tab">Biding Rules</a></li>
+                        <li><a href="#tab-setting-2" data-toggle="tab">Tempo</a></li>
+                        <li><a href="#tab-setting-3" data-toggle="tab">Assignment</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="tab-setting-1">
+                            <div class="row">
+                                <div class="reassign-container">
+                                    <div class="col-md-6 reassign-module">
+                                        <h4 class="title">Content Strategist</h4>
+                                        <div class="clearfix">
+                                            <div class="col-md-5 form-group content-strategist-billing-rules">
+                                                <label class="control-label">Cost</label>
+                                                <input class="form-control" type="text" name="" value="16.00" />
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="col-md-12 check-box">
+                                                <label class="checkbox billing-internal-content-strategist">
+                                                    <input type="checkbox" data-toggle="checkbox" value="" />Internal
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tab-navigation">
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-no btn-cancel-settings pull-left">Cancel</button>
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-setting-2">
+                            <div class="row">
+                                <div class="reassign-container">
+                                    <div class="reassign-module">
+                                        <div class="col-md-12 card recurrent-mission">
+                                            <div class="recurrent-mission-switch">
+                                                <div class="col-md-1 check-switch">
+                                                    <div class="switch" data-on-label="" data-off-label="">
+                                                        <input type="checkbox" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 check-switch-status">
+                                                    Recurrent Mission : <span>NO</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 reassign-module">
+                                        <div class="col-md-6 tempo-description">
+                                            <div class="col-md-12 form-group">
+                                                <label class="control-label">Items per card</label>
+                                                <input class="form-control" type="text" name="" value="40" />
+                                            </div>
+                                            <div class="col-md-12 tempo-overview">
+                                                <p>Mission Volume <span>200 articles</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 tempo-description">
+                                            <div class="col-md-12 form-group">
+                                                <label class="control-label clearfix">Tempo</label>
+                                                <div class="col-md-12 tempo-box">
+                                                    <div class="col-md-6 input-group">
+                                                        <input type="text" class="form-control" value="3" />
+                                                        <span class="input-group-addon">
+                                                            <select name="tempo" class="selectpicker">
+                                                                <option>days</option>
+                                                                <option>months</option>
+                                                                <option>years</option>
+                                                            </select>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-md-6 notify">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" data-toggle="checkbox" value="" />Notify
+                                                            me if Tempo is not respected
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 tempo-overview">
+                                                <p>Estimated end date <span>Jul 28, 2019</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tab-navigation">
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back">Back</button>
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-setting-3">
+                            <div class="row">
+                                <div class="reassign-container">
+                                    <div class="col-md-12 reassign-module">
+                                        <label class="control-label">Assignee</label>
+                                        <select class="mission-assignee">
+                                            <option data-img-src="lbd/img/default-avatar.png">Adnan Sagar</option>
+                                            <option data-img-src="lbd/img/default-avatar.png">Rena Cugelman</option>
+                                            <option data-img-src="lbd/img/default-avatar.png">Tavis Lochhead</option>
+                                            <option data-img-src="lbd/img/default-avatar.png">Brain Cugelman</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tab-navigation">
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back">Back</button>
+                                    <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish"
+                                        onclick="onFinishWizard()">Validate Settings</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 settings-wrap create-job-settings">
+    <span class="close"><a href="javascript:;"><i class="material-icons">close</i></a></span>
+    <div class="row">
+        <div class="col-md-10 settings-wrap-title">
+            Create a job
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 create-job-container">
+            <h4 class="title">Job and Brief</h4>
+            <div class="row">
+                <div class="col-md-6 create-job-container-module">
+                    <label>Job Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 create-job-container-module">
+                    <label>What are you looking for? *</label>
+                    <select name="tempo" class="selectpicker">
+                        <option>Translator</option>
+                        <option>Writer</option>
+                        <option>Proofreader</option>
+                    </select>
+                </div>
+                <div class="col-md-2 create-job-container-module">
+                    <label>Qty*</label>
+                    <input class="form-control" type="number" />
+                </div>
+                <div class="col-md-2 create-job-container-module">
+                    <label># Candidate max</label>
+                    <input class="form-control" type="number" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 create-job-container-module">
+                    <input id="upload-create-job-file" type="file" />
+                    <a class="add-create-job-file" href="javascript:;">
+                        + Add brief
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 create-job-container-module">
+                    <div class="added-create-job-file-container">
+                        <div class="added-create-job-file">
+                            <div class="col-md-1"><i class="material-icons pull-right">insert_drive_file</i></div>
+                            <div class="col-md-10 file-name">Allocine_brief-writer.pdf</div>
+                            <div class="col-md-1">
+                                <a href="javascript:;">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="title">Timimg</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Application phase - End time *</label>
+                    <div class="row">
+                        <div class="col-md-6 create-job-container-module">
+                            <input class="form-control datepicker" placeholder="Date Here" type="text" />
+                        </div>
+                        <div class="col-md-4 create-job-container-module">
+                            <input type="text" class="form-control timepicker" placeholder="Time Here" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label>Selection phase - End time *</label>
+                    <div class="row">
+                        <div class="col-md-6 create-job-container-module">
+                            <input class="form-control datepicker" placeholder="Date Here" type="text" />
+                        </div>
+                        <div class="col-md-4 create-job-container-module">
+                            <input type="text" class="form-control timepicker" placeholder="Time Here" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 tab-navigation">
+            <button type="button" class="btn btn-no pull-left btn-cancel-settings">Cancel</button>
+            <a href="sourcing-offers-single.html" type="" class="btn btn-yes pull-right">Create</a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="card-container">
+        <ul id="card-container">
+            <!-- @include _mission-ov-v1-cards-decks.html -->
+        </ul>
+    </div>
+</div>
+<div class="toggle-panel-container" style="display: none;">
+    <a href="javascript:;"><i class="material-icons">menu</i></a>
+</div>
+<a href="javascript:;" data-toggle="modal" data-target="#page-refresh" style="display: none;">Alert to reload page</a>

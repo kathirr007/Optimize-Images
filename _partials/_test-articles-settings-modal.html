@@ -1,0 +1,327 @@
+<div class="modal fade test-articles-settings-modal" id="testArticlesSettingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">
+					<i class="material-icons">close</i>
+				</span>
+				</button>
+				<div class="row">
+					<div class="col-md-6 modal-title">
+						Test articles settings
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-12 progress-steps">
+									<div id="wizardCard">
+										<form action="" id="wizardForm" method="">
+											<div class="tab-links">
+												<ul class="nav">
+													<li>
+														<a data-toggle="tab" href="#tab-candidateSettings">
+															Candidate settings
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#tab-proofreadingSettings">
+															Proofreading settings
+														</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane" id="tab-candidateSettings">
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<div class="row">
+																	<div class="col-md-6">
+																		<label>Pricing *</label>
+																		<div class="col-md-12 activation-border">
+																			<div class="col-md-12 activation-container">
+																				<div class="col-md-2 activation-switch">
+																					<div class="switch" data-off-label="" data-on-label="">
+																						<input type="checkbox"/>
+																					</div>
+																				</div>
+																				<div class="col-md-9 activation-statement">
+																					Paid articles:
+																					<span class="no">
+																						NO
+																					</span>
+																					<span class="yes">
+																						YES
+																					</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-6 settings-container-module">
+																		<label>Cost per article *</label>
+																		<div class="row">
+																			<div class="col-md-5 mt-10">
+																				<input type="number" class="form-control" placeholder="Ex: 15">
+																			</div>
+																			<div class="col-md-7 mt-10">
+																				<select class="selectpicker">
+																					<option value="">per article</option>
+																					<option value="">per article</option>
+																					<option value="">per article</option>
+																					<option value="">per article</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6">
+																<div class="row">
+																	<div class="col-md-5 settings-container-module">
+																		<label>Production Time *</label>
+																		<input type="number" class="form-control" placeholder="Ex: 24">
+																	</div>
+																	<div class="col-md-7 settings-container-module">
+																		<label></label>
+																		<select class="selectpicker mt-5">
+																			<option value="">hours</option>
+																			<option value="">days</option>
+																			<option value="">weeks</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 settings-container-module">
+																<label>Check plagiarism *</label>
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Plagiarism bot:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<label>Add a brief</label>
+																<a class="drag-drop-brief-settings" href="javascript:;">
+																	<div class="placeholder">
+																		Drag and drop your file(s) <span> - or click here to upload</span>
+																	</div>
+																</a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<div class="added-settings-brief">
+																	<div class="col-md-1 file-icon"><i class="material-icons pull-right">insert_drive_file</i></div>
+																	<div class="col-md-10 file-name">Allocine_brief-writer.pdf</div>
+																	<div class="col-md-1">
+																		<a href="javascript:;">
+																			<i class="material-icons">delete</i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 tab-navigation">
+																<div class="row">
+																	<div class="col-md-12">
+																		<button class="btn btn-cancel btn-fill btn-wd btn-no btn-cancel-settings pull-left" type="button" data-dismiss="modal">
+																		Cancel
+																		</button>
+																		<button class="btn btn-yes btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+																		Next
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="tab-proofreadingSettings">
+														<div class="row">
+															<div class="col-md-6 settings-container-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Proofreading:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 settings-container-module">
+																<label>Team list *</label>
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Search assignee in a team list:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- <div class="row">
+															<div class="col-md-12 settings-container-module">
+																<label>Assignee *</label>
+																<select data-placeholder="Select an user" class="chosen-select-deselect" tabindex="12">
+																	<option value=""></option>
+																	<option data-img-src="lbd/img/default-avatar.png">Adnan Sagar</option>
+																	<option data-img-src="lbd/img/default-avatar.png">Rena Cugelman</option>
+																	<option selected data-img-src="lbd/img/default-avatar.png">Tavis Lochhead</option>
+																	<option data-img-src="lbd/img/default-avatar.png">Brain Cugelman</option>
+																</select>
+															</div>
+														</div> -->
+														<div class="row">
+															<div class="assigned-user-container">
+																<div class="col-md-12 assigned-user-module">
+																	<label>Assignee(s) *</label>
+																	<a href="javascript:;" class="col-md-12 add-assignee" data-toggle="modal" data-target="#importTeamlistCardSingle">
+																		+ Add assignee(s) from related teamlists
+																	</a>
+																	<div class="col-md-12 added-assignee">
+																		<div class="user-image">
+																			<img class="img-circle" src="lbd/img/default-avatar.png" />
+																		</div>
+																		<div class="user-image">
+																			<img class="img-circle" src="lbd/img/default-avatar.png" />
+																		</div>
+																		<div class="user-image">
+																			<img class="img-circle" src="lbd/img/default-avatar.png" />
+																		</div>
+																		<div class="user-image">
+																			<div class="card-user-empty user">
+																				+4
+																			</div>
+																		</div>
+																		<b class="mr-5">John Doe, Michael, Martin and 3 more</b> have been selected
+																		<span class="edit">
+																			<i class="material-icons">create</i>
+																			<a href="javascript:;" data-toggle="modal" data-target="#selectEditAssigneesModal">
+																				Edit
+																			</a>
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<label>Assignee *</label>
+																<a class="add-assignee-teamlist" href="javascript:;" data-toggle="modal" data-target="#importTeamlistCardSingle">
+																	<div class="placeholder">
+																		+ Add assignee from a teamlist
+																	</div>
+																</a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 settings-container-module">
+																<label>Production Time *</label>
+																<div class="row">
+																	<div class="col-md-5">
+																		<input type="number" class="form-control" placeholder="Ex: 24">
+																	</div>
+																	<div class="col-md-7">
+																		<select class="selectpicker">
+																			<option value="">hours</option>
+																			<option value="">days</option>
+																			<option value="">weeks</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<label>Add a brief</label>
+																<a class="drag-drop-brief-settings" href="javascript:;">
+																	<div class="placeholder">
+																		Drag and drop your file(s) <span> - or click here to upload</span>
+																	</div>
+																</a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 settings-container-module">
+																<div class="added-settings-brief">
+																	<div class="col-md-1 file-icon"><i class="material-icons pull-right">insert_drive_file</i></div>
+																	<div class="col-md-10 file-name">Allocine_brief-writer.pdf</div>
+																	<div class="col-md-1">
+																		<a href="javascript:;">
+																			<i class="material-icons">delete</i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 tab-navigation">
+																<div class="row">
+																	<div class="col-md-12">
+																		<button class="btn btn-info btn-fill btn-wd btn-no btn-back pull-left" type="button">
+																		Back
+																		</button>
+																		<button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" onclick="onFinishWizard()" type="button">
+																		Done
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

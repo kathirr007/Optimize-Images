@@ -1,0 +1,127 @@
+<div aria-labelledby="create-new-client-modal" class="modal fade create-new-client-modal" id="edit-new-client-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                        close
+                        </i>
+                    </a>
+                </span>
+                <div class="modal-title">
+                    Edit client
+                </div>
+                <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="clientId">
+                                    Client ID
+                                </label>
+                                <input class="form-control" id="clientId" placeholder="C017" type="text"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="clientName">
+                                    Client Name
+                                </label>
+                                <input class="form-control" id="clientName" placeholder="ex: Webedia, LVMH.." type="text"/>
+                            </div>
+                            <div class="col-md-3 pull-right">
+                                <label for="clientHashtag">
+                                    Client Hashtag
+                                </label>
+                                <input type="text" class="form-control selectpicker" id="clientHashtag" value="" placeholder="Type tags and enter" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-15">
+                            <label>Relatd business unit <span class="required">*</span></label>
+                            <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Choose a business unit" id="">
+                                <option data-hidden="true"></option>
+                                <option value="0">Content for business</option>
+                                <option value="1">Falana</option>
+                                <option value="2">Dimca</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group client-logo">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-client-logo">
+                                    Client Logo
+                                </label>
+                            </div>
+                            <div class="client-logo empty">
+                                <div class="col-md-12">
+                                    <input id="upload-client-logo" type="file"/>
+                                    <a class="add-client-logo" href="javascript:;">
+                                        <div class="col-md-12">
+                                            Add an image
+                                            <span class="d-block">
+                                                from your computer
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-12">
+                                    <a class="import-from-twitter d-block" href="javascript:;">
+                                        Or import it from twitter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group client-logo">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-client-logo">
+                                    Client Logo
+                                </label>
+                            </div>
+                            <div class="client-logo full col-md-10">
+                                <div class="col-md-3 image-container">
+                                    <img class="image-loaded" src="lbd/img/blog-1.jpg">
+                                    </img>
+                                </div>
+                                <div class="col-md-9 client-desc-container">
+                                    <div class="description">
+                                        <strong>
+                                        Twitter user:
+                                        </strong>
+                                        <a class="client-name" href="javascript:;">
+                                            @Allocine
+                                        </a>
+                                    </div>
+                                    <div class="image-action">
+                                        <a class="replace" href="javascript:;">
+                                            Replace Image
+                                        </a>
+                                        <a class="remove" href="javascript:;">
+                                            Remove image
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-no pull-left form-control full-width" data-dismiss="modal" type="button">
+                                Cancel
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-yes pull-right form-control full-width" type="button">
+                                Save client
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

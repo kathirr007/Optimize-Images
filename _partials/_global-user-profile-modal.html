@@ -1,0 +1,690 @@
+<div aria-labelledby="globalUserProfileModal" class="modal fade global-user-profile-modal"
+    id="globalUserProfileModal" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="user-profile clearfix">
+                    <span class="close">
+                        <a data-dismiss="modal" href="javascript:;">
+                            <i class="material-icons">
+                                close
+                            </i>
+                        </a>
+                    </span>
+                    <div class="user-details col-md-12 form-group">
+                        <div class="row df-ac">
+                            <div class="col-md-1 client-image p-0">
+                                <div class="client-image-container global-user">
+                                    <img class="img-circle img-responsive mCS_img_loaded"
+                                        src="lbd/img/default-avatar.png" />
+                                </div>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="row d-flex">
+                                    <div class="col-md-9 p-0 pull-left list-head-container">
+                                        <div class="row">
+                                            <div class="col-md-12 user-name">
+                                                <label class="primary-font bo-user" for="">Michael Martin</label>
+                                            </div>
+                                        </div>
+                                        <div class="row edit-update-name" style="display: none;">
+                                            <div class="col-md-10">
+                                                <div class="row">
+                                                    <div class="col-md-5 edit-update-name-input">
+                                                        <input type="text" placeholder="Type first name"
+                                                            class="form-control" value="" />
+                                                    </div>
+                                                    <div class="col-md-5 edit-update-name-input">
+                                                        <input type="text" placeholder="Type last name"
+                                                            class="form-control" value="" />
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button type="" id="updateUserProfileName"
+                                                            class="btn btn-fill btn-wd btn-yes">Update</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 user-jobs d-flex">
+                                                <span class="helper-text">
+                                                    Senior writer, Junior translator
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 d-flex">
+                                                <a href="" data-toggle="modal" data-target="#changeUserImageModal"
+                                                    class="d-inline-flex user-image-change">Change image</a>
+                                                <a href="javascript:;" class="d-inline-flex user-logout">logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pull-right download-profile">
+                                        <button
+                                            class="btn btn-default btn-fill full-width btn-wd btn-confirm pull-right"
+                                            type="button">
+                                            Share Profile
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 tab-step">
+                            <div class="tab-step-content">
+                                <ul class="nav">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#userOverview">
+                                            Overview
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#userComments">
+                                            Comments &amp; activities
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#userGroup">
+                                            User group and role
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content tab-content-progress">
+                                    <div class="tab-pane general-info active" id="userOverview">
+                                        <div class="row d-flex form-group">
+                                            <div class="col-md-6 d-flex">
+                                                <div class="highlight-bg">
+                                                    <div class="col-md-12 user-contact-info">
+                                                        <div class="row info-header form-group">
+                                                            <span class="d-inline-block info-title">
+                                                                Contact
+                                                            </span>
+                                                            <span class="pull-right d-inline-block helper-text">
+                                                                <a class="info-edit" href="javascript:;"
+                                                                    data-toggle="modal"
+                                                                    data-target="#myProfileEditCotnactModal">
+                                                                    Edit
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row info-body">
+                                                            <ul class="contact-phones-list">
+                                                                <li class="list-item df-ac">
+                                                                    <span
+                                                                        class="d-inline-flex helper-text contact-type">Mob
+                                                                        : </span>
+                                                                    <span class="d-inline-flex primary-font">06 59 86 21
+                                                                        45</span>
+                                                                </li>
+                                                                <li class="list-item df-ac">
+                                                                    <span
+                                                                        class="d-inline-flex helper-text contact-type">Pro
+                                                                        : </span>
+                                                                    <span class="d-inline-flex primary-font">06 59 86 21
+                                                                        45</span>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="contact-emails-list">
+                                                                <li class="list-item df-ac">
+                                                                    <span
+                                                                        class="d-inline-flex helper-text contact-type"><i
+                                                                            class="material-icons">mail_outline</i></span>
+                                                                    <a class="d-inline-flex contact-email"
+                                                                        href="mailto:m.martin@gmail.com">
+                                                                        m.martin@gmail.com
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex">
+                                                <div class="highlight-bg">
+                                                    <div class="col-md-12 user-contact-info">
+                                                        <div class="row info-header form-group">
+                                                            <span class="d-inline-block info-title">
+                                                                Address
+                                                            </span>
+                                                            <span class="pull-right d-inline-block helper-text">
+                                                                <a class="info-edit" href="javascript:;"
+                                                                    data-toggle="modal"
+                                                                    data-target="#myProfileEditAddressModal">
+                                                                    Edit
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row info-body">
+                                                            <ul class="contact-address-info">
+                                                                <li class="list-item">
+                                                                    <span class="d-block primary-font">2 rue Paul
+                                                                        Vaillant Couturier <br />
+                                                                        92300 Levallois-Perret</span>
+                                                                    <span class="df-ac"><img alt="" class="pr-10"
+                                                                            src="lbd/img/flag/fr.gif" /> France
+                                                                        (FR)</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group user-about-info">
+                                            <div class="col-md-12 d-flex">
+                                                <div class="highlight-bg">
+                                                    <div class="col-md-12 contact-info">
+                                                        <div class="row info-header form-group">
+                                                            <span class="d-inline-block info-title">
+                                                                About
+                                                            </span>
+                                                            <span class="pull-right d-inline-block">
+                                                                <a class="about-edit" href="javascript:;">
+                                                                    Edit
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row info-body">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit. Facere quis sapiente, laborum. Sint esse, dolores
+                                                                saepe, necessitatibus voluptatibus nesciunt assumenda
+                                                                sed, illum blanditiis qui magni fugiat. Veritatis ullam,
+                                                                eveniet tenetur nihil voluptate fugit adipisci
+                                                                laudantium maiores consequuntur harum, quia id vel
+                                                                deserunt dolore illum recusandae quos, est. Aliquid
+                                                                eveniet temporibus, quisquam rem quaerat! Esse dicta id
+                                                                quidem blanditiis voluptas! Sequi maxime dignissimos,
+                                                                nihil a blanditiis praesentium qui, consequatur unde
+                                                                asperiores voluptates tempora, laborum beatae quos
+                                                                delectus repellendus sint, earum rem!
+                                                            </p>
+                                                            <p>
+                                                                Ipsa quae ab dolor harum saepe quibusdam esse fugit,
+                                                                optio suscipit quam! Quaerat eius architecto dolorem
+                                                                beatae molestiae ipsam perspiciatis tenetur quae,
+                                                                aperiam cum tempora officiis, impedit, aspernatur
+                                                                debitis. Suscipit, saepe blanditiis libero, iste dicta
+                                                                reiciendis adipisci odio unde deserunt consectetur
+                                                                ratione. Ex voluptate consequuntur eligendi praesentium
+                                                                quae officiis, repellendus non nostrum. Repudiandae quae
+                                                                voluptatem, minima voluptatibus nemo! Qui consequuntur
+                                                                reprehenderit facere quia non dolore, voluptatem illo
+                                                                magni aut iste, quas eligendi quae animi voluptates
+                                                                voluptate itaque maiores sint distinctio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group about-info-edit">
+                                            <div class="col-md-12">
+                                                <form action="" class="form about-info-form">
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <textarea class="form-control" id="edit-textarea-normal-02"
+                                                                rows="10">
+                                                                <p>
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis sapiente, laborum. Sint esse, dolores saepe, necessitatibus voluptatibus nesciunt assumenda sed, illum blanditiis qui magni fugiat. Veritatis ullam, eveniet tenetur nihil voluptate fugit adipisci laudantium maiores consequuntur harum, quia id vel deserunt dolore illum recusandae quos, est. Aliquid eveniet temporibus, quisquam rem quaerat! Esse dicta id quidem blanditiis voluptas! Sequi maxime dignissimos, nihil a blanditiis praesentium qui, consequatur unde asperiores voluptates tempora, laborum beatae quos delectus repellendus sint, earum rem!
+                                                                </p>
+                                                                <p>
+                                                                    Ipsa quae ab dolor harum saepe quibusdam esse fugit, optio suscipit quam! Quaerat eius architecto dolorem beatae molestiae ipsam perspiciatis tenetur quae, aperiam cum tempora officiis, impedit, aspernatur debitis. Suscipit, saepe blanditiis libero, iste dicta reiciendis adipisci odio unde deserunt consectetur ratione. Ex voluptate consequuntur eligendi praesentium quae officiis, repellendus non nostrum. Repudiandae quae voluptatem, minima voluptatibus nemo! Qui consequuntur reprehenderit facere quia non dolore, voluptatem illo magni aut iste, quas eligendi quae animi voluptates voluptate itaque maiores sint distinctio.
+                                                                </p>
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group about-edit-actions">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-fill full-width btn-wd cancel-btn"
+                                                                data-dismiss="">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-fill full-width btn-yes">
+                                                                Save
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12 form-group">
+                                                <div class="col-md-12 divider">
+                                                    <span class="d-inline-flex info-title">
+                                                        Account Informations <i class="material-icons pl-10">help</i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 d-flex">
+                                                <div class="highlight-bg">
+                                                    <div class="col-md-6 contact-account-info">
+                                                        <div class="row info-body">
+                                                            <ul class="d-flex">
+                                                                <li class="list-item">
+                                                                    <span
+                                                                        class="d-inline-flex helper-text contact-type mr-10">User
+                                                                        name : </span>
+                                                                    <span
+                                                                        class="d-inline-flex primary-font">Izvanovec</span>
+                                                                </li>
+                                                                <li class="list-item">
+                                                                    <span
+                                                                        class="d-inline-flex helper-text contact-type mr-10">Password
+                                                                        : </span>
+                                                                    <span
+                                                                        class="d-inline-flex primary-font">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <span class="pull-right d-inline-block helper-text">
+                                                            <a class="languages-edit" href="javascript:;"
+                                                                data-toggle="modal"
+                                                                data-target="#myProfileEditAccountInfoModal">
+                                                                Edit
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-6 mb-15">
+                                                <label>Choose your business units <span
+                                                        class="required">*</span></label>
+                                                <select class="selectpicker validate[required]" multiple
+                                                    data-live-search="true" data-actions-box="true"
+                                                    data-selected-text-format="count > 3" title="Select business units"
+                                                    id="related_business_units" name="related_business_units[]">
+                                                    <option data-hidden="true"></option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane user-references" id="userComments">
+                                        <div class="d-flex row form-group">
+                                            <div class="col-md-4 reference-info">
+                                                <div class="clearfix">
+                                                    <select class="selectpicker" multiple data-live-search="false"
+                                                        data-actions-box="true" data-selected-text-format="count > 3"
+                                                        title="Filter comments & activities" id="contributorJobs">
+                                                        <option data-hidden="true"></option>
+                                                        <option value="0">September 2018 (10)</option>
+                                                        <option value="1">October 2018 (13)</option>
+                                                        <option value="2">November 2018 (14)</option>
+                                                        <option value="3">June 2018 (15)</option>
+                                                        <option value="4">December 2018 (16)</option>
+                                                        <option value="5">March 2018 (17)</option>
+                                                        <option value="6">July 2018 (18)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex form-group">
+                                            <div class="col-md-12 d-flex from-group">
+                                                <div class="row">
+                                                    <div class="col-md-12 feeds-container">
+                                                        <div class="col-md-12 feeds-comments-container"
+                                                            data-container="body">
+                                                            <ul class="comments-list-container">
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <img src="lbd/img/default-avatar.png"
+                                                                                    class="img-circle">
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        We are waiting for client
+                                                                                        validation. 14 days left. I will
+                                                                                        tell you if anything moving.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <img src="lbd/img/default-avatar.png"
+                                                                                    class="img-circle">
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        We are waiting for client
+                                                                                        validation. 14 days left. I will
+                                                                                        tell you if anything moving.
+                                                                                        Lorem ipsum dolor sit amet,
+                                                                                        consectetur adipisicing elit.
+                                                                                        Doloremque est ut fugiat officia
+                                                                                        expedita dolorem, aliquam,
+                                                                                        itaque illo eaque fugit ipsam
+                                                                                        deserunt unde, dolor!
+                                                                                        <br><br>Obcaecati, sed omnis
+                                                                                        unde minus harum quisquam
+                                                                                        aliquam accusantium recusandae
+                                                                                        eaque beatae! Placeat, dolorum.
+                                                                                        Cumque voluptatum quo
+                                                                                        accusantium labore, quos nam
+                                                                                        laborum voluptatem? Voluptatum
+                                                                                        delectus, asperiores.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <i
+                                                                                    class="material-icons df-ac-jc">message</i>
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        has paused <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <img src="lbd/img/default-avatar.png"
+                                                                                    class="img-circle">
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        We are waiting for client
+                                                                                        validation. 14 days left. I will
+                                                                                        tell you if anything moving.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <img src="lbd/img/default-avatar.png"
+                                                                                    class="img-circle">
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        We are waiting for client
+                                                                                        validation. 14 days left. I will
+                                                                                        tell you if anything moving.
+                                                                                        Lorem ipsum dolor sit amet,
+                                                                                        consectetur adipisicing elit.
+                                                                                        Doloremque est ut fugiat officia
+                                                                                        expedita dolorem, aliquam,
+                                                                                        itaque illo eaque fugit ipsam
+                                                                                        deserunt unde, dolor!
+                                                                                        <br><br>Obcaecati, sed omnis
+                                                                                        unde minus harum quisquam
+                                                                                        aliquam accusantium recusandae
+                                                                                        eaque beatae! Placeat, dolorum.
+                                                                                        Cumque voluptatum quo
+                                                                                        accusantium labore, quos nam
+                                                                                        laborum voluptatem? Voluptatum
+                                                                                        delectus, asperiores.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="highlight-bg">
+                                                                    <div class="col-md-12 comments-section">
+                                                                        <div class="row">
+                                                                            <div class="col-md-1 user-image">
+                                                                                <i
+                                                                                    class="material-icons df-ac-jc">message</i>
+                                                                            </div>
+                                                                            <div class="col-md-11 comment-container">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-9 user-name">
+                                                                                        Clarisse Courtois</div>
+                                                                                    <div class="col-md-3 comment-date">
+                                                                                        10m ago
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 comment">
+                                                                                        <span
+                                                                                            class="atMention">@Paulmartin</span>
+                                                                                        has paused <span
+                                                                                            class="hashTag">#blog2019</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane external-links" id="userGroup">
+                                        <div class="d-flex row form-group">
+                                            <div class="col-md-6 reference-info">
+                                                <div class="clearfix">
+                                                    <label for="" class="text-uppercase">User Group</label>
+                                                    <select class="selectpicker" multiple data-live-search="false"
+                                                        data-actions-box="true" data-selected-text-format="count > 3"
+                                                        title="Filter comments & activities" id="contributorJobs">
+                                                        <option data-hidden="true"></option>
+                                                        <option value="0">Sales</option>
+                                                        <option value="1">Management</option>
+                                                        <option value="2">Finance</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="text-uppercase">Profile</label>
+                                                <div class="card clearfix mb-10 pt-10 pb-10">
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Market</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">French</option>
+                                                            <option value="1">United Kingdome</option>
+                                                            <option value="2">United States</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Business Unit</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Content4Business</option>
+                                                            <option value="1">Falana </option>
+                                                            <option value="2">Dimca</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Service</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Tech/UX</option>
+                                                            <option value="1">Human Resource</option>
+                                                            <option value="2">Content</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>People</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Project Manager</option>
+                                                            <option value="1">Assistant Manager</option>
+                                                            <option value="2">Super Admin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="card clearfix mb-10 pt-10 pb-10">
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Market</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">French</option>
+                                                            <option value="1">United Kingdome</option>
+                                                            <option value="2">United States</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Business Unit</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Content4Business</option>
+                                                            <option value="1">Falana </option>
+                                                            <option value="2">Dimca</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>Service</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Tech/UX</option>
+                                                            <option value="1">Human Resource</option>
+                                                            <option value="2">Content</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-10 reference-info">
+                                                        <label>People</label>
+                                                        <select class="selectpicker" title="Choose" id="">
+                                                            <option data-hidden="true"></option>
+                                                            <option value="0">Project Manager</option>
+                                                            <option value="1">Assistant Manager</option>
+                                                            <option value="2">Super Admin</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-15">
+                                                        <a href="javascript:;" class="btn-link">+ Add profile</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex row form-group">
+                                            <div class="col-md-6 reference-info">
+                                                <div class="clearfix">
+                                                    <label for="" class="text-uppercase">Active user</label>
+                                                    <div
+                                                        class="col-md-12 activation-container form-control df-ac auto-height p-10">
+                                                        <div class="col-md-2 p-0 activation-switch df-ac">
+                                                            <div class="switch" data-off-label="" data-on-label="">
+                                                                <input type="checkbox" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-10 activation-statement">
+                                                            This user is active :
+                                                            <span class="yes">
+                                                                YES
+                                                            </span>
+                                                            <span class="no">
+                                                                NO
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 tab-navigation">
+                                                <button type="button" class="btn btn-info btn-fill btn-no pull-left"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-info btn-fill btn-yes pull-right"
+                                                    id="save_btn" onclick="updateUser();">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

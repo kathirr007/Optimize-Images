@@ -1,0 +1,659 @@
+<div class="modal fade browse-mission-modal" id="browseMissionModal" tabindex="-1" role="dialog" aria-labelledby="browseMissionModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <div class="row">
+                    <a href="javascript:;" class="col-md-1 back" id="back" data-dismiss="modal">
+                        <i class="material-icons">arrow_back</i>
+                    </a>
+                    <div class="col-md-6 browse-mission-modal-title">
+                        Browse old mission prices
+                    </div>
+                    <div class="col-md-3 agree-switch pull-right">
+                        <div class="d-flex">
+                            <div class="col-md-3 switch-label">
+                                <strong>Agreed</strong>
+                            </div>
+                            <div class="col-md-6 switch-agree">
+                                <div class="row">
+                                    <div class="switch" data-on-label="" data-off-label="" >
+                                        <input type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 switch-label text-right">
+                                <span class="helper-text">Real</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table cellspacing="10" class="mission-quote-table" id="mission-quote-table">
+                            <thead>
+                                <tr class="row">
+                                    <th class="col-md-4" data-field="quote-client" data-sortable="true">
+                                        Client
+                                    </th>
+                                    <th class="col-md-2" data-field="quote-nb-words" data-sortable="true">
+                                        NB Words
+                                    </th>
+                                    <th class="col-md-2" data-field="quote-price-per-word" data-sortable="true">
+                                        Price / Word
+                                    </th>
+                                    <th class="col-md-2" data-field="quote-margin" data-sortable="true">
+                                        Margin
+                                    </th>
+                                    <th class="col-md-2" data-field="quote-selling-price" data-sortable="true">
+                                        Selling Price
+                                    </th>
+                                </tr>
+                                <tr class="">
+                                    <th class="" colspan="5">
+                                        <div class="quote-list-item quote-selected-container">
+                                            <div class="row df-ac quote-selected">
+                                                <div class="col-md-4 quote-client"><span class="d-block helper-text">Current settings</span></div>
+                                                <div class="col-md-2 text-center quote-nb-words">400</div>
+                                                <div class="col-md-2 text-center quote-price-per-word">-</div>
+                                                <div class="col-md-2 text-center quote-margin">-</div>
+                                                <div class="col-md-2 text-center quote-selling-price">-</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr class="">
+                                    <th class="" colspan="5">
+                                        <div class="quote-list-item quote-selected-container">
+                                            <div class="row df-ac quote-selected">
+                                                <div class="col-md-4 quote-client">LVMH <span class="d-block helper-text">(Current settings)</span></div>
+                                                <div class="col-md-2 text-center quote-nb-words">400</div>
+                                                <div class="col-md-2 text-center quote-price-per-word"><strong>0.14 €</strong></div>
+                                                <div class="col-md-2 text-center quote-margin">12.615%</div>
+                                                <div class="col-md-2 text-center quote-selling-price">70.00 €</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                                <!-- <tr class="">
+                                    <th class="add-new-card" colspan="5">
+                                        <div class="">
+                                            <a class="add-card" data-target="#create-new-client-modal" data-toggle="modal" href="javascript:;">
+                                                <i class="material-icons">
+                                                    add
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </th>
+                                </tr> -->
+                            </thead>
+                            <tbody class="quote-list-container">
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote01" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote01">
+                                                    <span class="primary-font">LVMH</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            400
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.14 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            12.615%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            70.00 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote02" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote02">
+                                                    <span class="primary-font">Rue Du Commerce</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            120
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1641 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            66.6667%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote03" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote03">
+                                                    <span class="primary-font">Armand Thiery</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote04" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote04">
+                                                    <span class="primary-font">Trufaut</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote06" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote06">
+                                                    <span class="primary-font">BA&SH</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote07" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote07">
+                                                    <span class="primary-font">Thiery</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote08" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote08">
+                                                    <span class="primary-font">Charles Chevignen GAS</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote09" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote09">
+                                                    <span class="primary-font">cleint name 09</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote10" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote10">
+                                                    <span class="primary-font">Client name 10</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote11" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote11">
+                                                    <span class="primary-font">Client name 11</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote12" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote12">
+                                                    <span class="primary-font">Client name 12</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="quote-list-item">
+                                    <td class="col-md-4 quote-client">
+                                        <div class="row df-ac full-width">
+                                            <div class="col-md-1 quote-select-radio">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="missionQuote13" data-toggle="radio" name="quotePrice" value="option2">
+                                                </label>
+                                            </div>
+                                            <div class="col-md-11 quote-client-select text-left">
+                                                <label for="missionQuote13">
+                                                    <span class="primary-font">Client name 13</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center quote-nb-words-container">
+                                        <div class="creation-date quote-nb-words">
+                                            360
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-price-per-word">
+                                            <span class="primary-font">0.1773 €</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-margin">
+                                            48.88893%
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2 text-center">
+                                        <div class="quote-selling-price">
+                                            0.95 €
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12 mission-quote-container">
+                        <div class="no-quote-mission-container">
+                            <div class="no-quote-mission-info">
+                                <h4>No mission found.</h4>
+                                <p>We didn't find any old mission that matches your creterias.</p>
+                                <a href="javascript:;" class="btn btn-fill btn-download">Challenge team</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12 mission-estimation-container">
+                        <div class="mission-estimation">
+                            <div class="row df-ac">
+                                <div class="col-md-6 list-head-container list-head-quote-mission">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="header">
+                                                <strong class="primary-font">Translation articles FR to US</strong>
+                                                <div class="helper-text">
+                                                    Editorial - Translation - Blog - 400 Words
+                                                </div>
+                                                <div class="language-to df-ac">
+                                                    <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Espanol">
+                                                        <img src="lbd/img/flag/sp.gif">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="header">
+                                                <strong class="primary-font">Translation articles FR to US</strong>
+                                                <div class="helper-text">
+                                                    Editorial - Translation - Blog - 400 Words
+                                                </div>
+                                                <div class="language-to df-ac">
+                                                    <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="French">
+                                                        <img src="lbd/img/flag/fr.gif">
+                                                    </a>
+                                                    <i class="material-icons helper-text">chevron_right</i>
+                                                    <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Espanol">
+                                                        <img src="lbd/img/flag/sp.gif">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 total-mission-price pull-right">
+                                    <div class="row mission-turnover">
+                                        <div class="col-md-8">Mission turnover: </div>
+                                        <div class="col-md-4 text-right mission-turnover-text">-</div>
+                                    </div>
+                                    <div class="row quote-total form-group">
+                                        <div class="col-md-8">Quote total:</div>
+                                        <div class="col-md-4 text-right quote-total-text">-</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default full-width btn-fill disabled btn-wd btn-yes pull-right" type="button">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12 mission-estimation-container">
+                        <div class="mission-estimation">
+                            <div class="row df-ac">
+                                <div class="col-md-6 list-head-container list-head-quote-mission">
+                                    <div class="header">
+                                        <strong class="primary-font">Translation articles FR to US</strong>
+                                        <div class="helper-text">
+                                            Editorial - Translation - Blog - 400 Words
+                                        </div>
+                                        <div class="language-to df-ac">
+                                            <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="French">
+                                                <img src="lbd/img/flag/fr.gif">
+                                            </a>
+                                            <i class="material-icons helper-text">chevron_right</i>
+                                            <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Espanol">
+                                                <img src="lbd/img/flag/sp.gif">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 total-mission-price pull-right">
+                                    <div class="row mission-turnover">
+                                        <div class="col-md-8">Mission turnover: </div>
+                                        <div class="col-md-4 text-right mission-turnover-text">3 644.27 €</div>
+                                    </div>
+                                    <div class="row quote-total form-group">
+                                        <div class="col-md-8">Quote total:</div>
+                                        <div class="col-md-4 text-right quote-total-text">38 120.57 €</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default full-width btn-fill btn-wd btn-yes pull-right" type="button">
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 browse-mission-warning helper-text">
+                        <strong>Warning</strong> - This action will erase your current price and resources settings.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

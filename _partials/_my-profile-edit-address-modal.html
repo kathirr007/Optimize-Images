@@ -1,0 +1,94 @@
+<div aria-labelledby="myProfileEditAddressModal" class="modal fade my-profile-edit-address-modal" id="myProfileEditAddressModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                        close
+                        </i>
+                    </a>
+                </span>
+                <div class="row df-ac form-group">
+                    <a class="col-md-1 back pr-0" data-dismiss="modal" href="javascript:;" id="back">
+                        <i class="material-icons">
+                        arrow_back
+                        </i>
+                    </a>
+                    <div class="col-md-6 pl-0 send-share-message-title modal-title">
+                        Edit Address
+                    </div>
+                </div>
+                <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="clientAddressEdit" class="text-uppercase">
+                                    Address
+                                </label>
+                                <textarea class="form-control" id="clientAddressEdit" placeholder="2 rue Paul Vaillant Couturier" rows="3">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-3">
+                                <label for="userPostalEdit" class="text-uppercase">
+                                    Postal Code
+                                </label>
+                                <input class="form-control" placeholder="92300" name="userPostalEdit" type="text"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="userCityEdit" class="text-uppercase">
+                                    City
+                                </label>
+                                <input class="form-control" placeholder="Levellois-Perret" name="userCityEdit" type="text"/>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="" class="text-uppercase">
+                                    Country
+                                </label>
+                                <div class="row client-country">
+                                    <div class="col-md-12">
+                                        <select class="chosen-default flags">
+                                            <option data-img-src="lbd/img/flag/us.gif">
+                                                EN (US)
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/fr.gif">
+                                                FR
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/uk.gif">
+                                                EN (UK)
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/sp.gif">
+                                                ES
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/pol.gif">
+                                                PO
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="edit-quick-question-action col-md-12">
+                        <div class="divider">
+                            <div class="col-md-6 pl-0">
+                                <button class="btn btn-default full-width btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                Cancel
+                                </button>
+                            </div>
+                            <div class="col-md-6 pr-0">
+                                <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right form-control" type="button">
+                                Save changes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

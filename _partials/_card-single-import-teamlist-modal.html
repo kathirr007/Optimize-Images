@@ -1,0 +1,379 @@
+<div aria-labelledby="importTeamlist" class="modal fade import-teamlist-modal" id="importTeamlistCardSingle" role="dialog" style="" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="duplicate-cards clearfix">
+                    <span class="close">
+                        <a data-dismiss="modal" href="javascript:;">
+                            <i class="material-icons">
+                                close
+                            </i>
+                        </a>
+                    </span>
+                    <div class="modal-title">
+                        Import teamlist
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-5 teamlist-filters">
+                                    <div class="row form-group">
+                                        <div class="search-input col-md-12">
+                                            <input class="form-control" name="company" placeholder="Search a teamlist..." required="" type="text">
+                                                <div class="search-icon search-icon-none">
+                                                </div>
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="from-filter-container col-md-12">
+                                            <div class="from-filter clearfix">
+                                                <div class="sec-title">
+                                                    From...
+                                                </div>
+                                                <select class="selectpicker" data-actions-box="true" data-live-search="true" data-selected-text-format="count > 3" id="missions" multiple="" title="All Client">
+                                                    <option data-hidden="true">
+                                                    </option>
+                                                    <option>
+                                                        Client 00
+                                                    </option>
+                                                    <option>
+                                                        Client 01
+                                                    </option>
+                                                    <option>
+                                                        Client 02
+                                                    </option>
+                                                    <option>
+                                                        Client 03
+                                                    </option>
+                                                    <option>
+                                                        Client 04
+                                                    </option>
+                                                </select>
+                                                <select class="selectpicker" data-actions-box="true" data-live-search="true" data-selected-text-format="count > 3" id="missions" multiple="" title="All Contract">
+                                                    <option data-hidden="true">
+                                                    </option>
+                                                    <option>
+                                                        Contract 00
+                                                    </option>
+                                                    <option>
+                                                        Contract 01
+                                                    </option>
+                                                    <option>
+                                                        Contract 02
+                                                    </option>
+                                                    <option>
+                                                        Contract 03
+                                                    </option>
+                                                    <option>
+                                                        Contract 04
+                                                    </option>
+                                                </select>
+                                                <select class="selectpicker" data-actions-box="true" data-live-search="true" data-selected-text-format="count > 3" id="missions" multiple="" title="All missions">
+                                                    <option data-hidden="true">
+                                                    </option>
+                                                    <option>
+                                                        Mission 00
+                                                    </option>
+                                                    <option>
+                                                        Mission 01
+                                                    </option>
+                                                    <option>
+                                                        Mission 02
+                                                    </option>
+                                                    <option>
+                                                        Mission 03
+                                                    </option>
+                                                    <option>
+                                                        Mission 04
+                                                    </option>
+                                                </select>
+                                                <select class="selectpicker" data-actions-box="true" data-live-search="true" data-selected-text-format="count > 3" id="missions" multiple="" title="All Owners">
+                                                    <option data-hidden="true">
+                                                    </option>
+                                                    <option>
+                                                        Owner 00
+                                                    </option>
+                                                    <option>
+                                                        Owner 01
+                                                    </option>
+                                                    <option>
+                                                        Owner 02
+                                                    </option>
+                                                    <option>
+                                                        Owner 03
+                                                    </option>
+                                                    <option>
+                                                        Owner 04
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="job-filter-container col-md-12">
+                                            <div class="job-filter clearfix">
+                                                <div class="sec-title">
+                                                    Filter by job
+                                                </div>
+                                                <ul class="job-filter-checklist">
+                                                    <li>
+                                                        <label class="checkbox check-all">
+                                                            <input data-toggle="checkbox" type="checkbox" value=""/>
+                                                            All jobs
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox">
+                                                            <input data-toggle="checkbox" type="checkbox" value=""/>
+                                                            Writer
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox">
+                                                            <input data-toggle="checkbox" type="checkbox" value=""/>
+                                                            Proofreader
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox">
+                                                            <input data-toggle="checkbox" type="checkbox" value=""/>
+                                                            Translator
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="checkbox">
+                                                            <input data-toggle="checkbox" type="checkbox" value=""/>
+                                                            Translation proofreader
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <!-- <div class="filter-footer">
+                            <a href="javascript:;">More jobs</a>
+                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 teamlist-content">
+                                    <div class="row form-group">
+                                        <div class="col-md-12 no-data-container">
+                                            <div class="no-quote-mission-container">
+                                                <div class="no-quote-mission-info">
+                                                    <h4>
+                                                        No results found
+                                                    </h4>
+                                                    <p>
+                                                        Play with filters or type a keyword for selecting a teamlist
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-md-12 contract-content-container">
+                                            <div class="row form-group">
+                                                <div class="col-md-12">
+                                                    <div class="main-panel-header df-ac">
+                                                        <div class="col-md-9 pull-left lists-status">
+                                                            <span class="fw600">
+                                                                540 teamlists
+                                                            </span>
+                                                            matching to criterias
+                                                        </div>
+                                                        <div class="col-md-3 pull-right pr-0">
+                                                            <select class="selectpicker">
+                                                                <option data-img-src="lbd/img/default-avatar.png">
+                                                                    Newest first
+                                                                </option>
+                                                                <option data-img-src="lbd/img/default-avatar.png">
+                                                                    Oldest first
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card-section-list" data-role="contract-section-list">
+                                                        <ul class="teamlist-container">
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item">
+                                                                <div class="col-md-12 card card-contract p-0">
+                                                                    <label class="radio">
+                                                                        <input data-toggle="radio" id="" name="quotePrice" type="radio" value="option2">
+                                                                            <div class="list-details">
+                                                                                Proofreader - ENG
+                                                                                <span class="d-block">
+                                                                                    3/3 selected - 2 backup
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="list-created">
+                                                                                <span>
+                                                                                    03/03/2018
+                                                                                </span>
+                                                                            </div>
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider navigation-divider">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" data-dismiss="modal" type="button">
+                                        Cancel
+                                    </button>
+                                    <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" data-dismiss="modal" data-target="#selectAssigneesModal" data-toggle="modal" type="button">
+                                        Import
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

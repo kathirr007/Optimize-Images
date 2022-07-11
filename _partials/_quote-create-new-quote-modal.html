@@ -1,0 +1,201 @@
+<div aria-labelledby="create-new-quote-modal" class="modal fade create-new-quote-modal" id="create-new-quote-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                        close
+                        </i>
+                    </a>
+                </span>
+                <div class="modal-title">
+                    Create a new quote
+                </div>
+                <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 mb-15">
+                                <label>Business Unit <span class="required">*</span></label>
+                                <select class="selectpicker" data-live-search="true" title="Choose a business unit" id="">
+                                    <option data-hidden="true"></option>
+                                    <option value="0">Content for business</option>
+                                    <option value="1">Falana</option>
+                                    <option value="2">Dimca</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="">
+                                    Client name
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <select class="chosen-default">
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                <span class="clientID">C001</span> Webedia Group
+                                            </option>
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                <span class="clientID">C002</span> LNMH
+                                            </option>
+                                            <!-- <option data-img-src="">
+                                                <a class="create-new-client d-block" href="javascript:;" data-toggle="modal" data-target="#create-new-client-modal">
+                                                    + Create new client
+                                                </a>
+                                            </option> -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <a class="create-new-client d-block" href="javascript:;" data-toggle="modal" data-target="#create-new-client-modal">
+                                            + Create new client
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <label for="quoteName">
+                                    Quote name
+                                </label>
+                                <input class="form-control" id="quoteName" placeholder="ex: Webedia-Quote-V1" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 activation">
+                                <div class="col-md-12 activation-container">
+                                    <div class="col-md-1 activation-switch">
+                                        <div class="switch" data-off-label="" data-on-label="">
+                                            <input type="checkbox"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 activation-statement">
+                                        Create a CREDIT QUOTE:
+                                        <span class="no">
+                                            NO
+                                        </span>
+                                        <span class="yes">
+                                            YES
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="clientCategory">Category </label>
+                                    <select id="clientCategory" class="selectpicker">
+                                        <option value="1">-</option>
+                                        <option>
+                                        Creation &amp; Entertainment
+                                        </option>
+                                        <option>
+                                            Creation
+                                        </option>
+                                        <option>
+                                            Entertainment
+                                        </option>
+                                        <option>
+                                            Social Media
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="customerGoal">Customer Goal</label>
+                                    <select id="customerGoal" class="selectpicker">
+                                        <option value="1">-</option>
+                                        <option">
+                                            Goal 01
+                                        </option>
+                                        <option>
+                                            Goal 02
+                                        </option>
+                                        <option>
+                                            Goal 03
+                                        </option>
+                                        <option>
+                                            Goal 04
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="">
+                                    Targeted Websites
+                                </label>
+                                <ul class="targeted-websites">
+                                    <li class="list-item card col-md-6">
+                                        <label class="checkbox primary-font">
+                                            <input data-toggle="checkbox" type="checkbox"/>
+                                            wwww.webedia-group.com
+                                        </label>
+                                    </li>
+                                    <li class="list-item card col-md-6">
+                                        <label class="checkbox primary-font">
+                                            <input data-toggle="checkbox" type="checkbox"/>
+                                            wwww.webedia-group.com
+                                        </label>
+                                    </li>
+                                    <li class="list-item card col-md-6">
+                                        <label class="checkbox primary-font">
+                                            <input data-toggle="checkbox" type="checkbox"/>
+                                            wwww.webedia-group.com
+                                        </label>
+                                    </li>
+                                    <li class="list-item card col-md-6">
+                                        <label class="checkbox primary-font">
+                                            <input data-toggle="checkbox" type="checkbox"/>
+                                            wwww.webedia-group.com
+                                        </label>
+                                    </li>
+                                    <li class="list-item card col-md-6 add-new-website">
+                                        <label for="" class="full-width"><a href="javascript:;" class="add-new-website">+ Add a website</a></label>
+                                    </li>
+                                    <li class="list-item card col-md-12 add-website">
+                                        <div class="input-group d-flex">
+                                            <input type="text" placeholder="Add new website here" required class="form-control" value=""/>
+                                            <button type="" id="updateNewWebsite" class="btn btn-fill btn-wd auto-width btn-yes">Add</button>
+                                        </div>
+                                        <!-- <div class="col-md-8">
+                                            <input type="text" placeholder="Add new website here" class="form-control" value=""/>
+                                        </div>
+                                        <div class="col-md-2 pull-right">
+                                            <button type="" id="updateNewWebsite" class="btn btn-fill btn-wd btn-yes">Add</button>
+                                        </div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd full-width btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                Cancel
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd full-width btn-yes pull-right form-control" type="button">
+                                Create quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

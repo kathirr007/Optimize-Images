@@ -1,0 +1,439 @@
+<div class="col-md-12 settings-wrap crm-list-container">
+    <div class="main-panel-header row">
+        <span class="close">
+            <a href="javascript:;">
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+        </span>
+        <div class="col-md-12 list-title">
+            <h3>
+                Customer Relationship Management
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 tab-step crm-list-content-container">
+            <div class="tab-step-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav">
+                            <li class="active">
+                                <a aria-expanded="true" data-toggle="tab" href="#crm-list-surveys">
+                                    Surveys (2)
+                                </a>
+                            </li>
+                            <li class="">
+                                <a aria-expanded="false" data-toggle="tab" href="#crm-list-results">
+                                    Results (1)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content tab-content-progress">
+                    <div class="tab-pane active clearfix" id="crm-list-surveys">
+                        <div class="row tab-content-header">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 pull-left filter-container">
+                                        <select class="selectpicker" name="filter">
+                                            <option>
+                                                Newest First
+                                            </option>
+                                            <option>
+                                                Oldest First
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 pull-right create-new-survey-container page-status d-flex">
+                                        <button class="btn bg-default btn-download" data-target="#create-new-survey-modal" data-toggle="modal" type="">
+                                            Create new Survey
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-container row clearfix">
+                            <div class="col-md-12 contract-content-container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-section-list clearfix" data-role="contract-section-list">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <span class="label paused">
+                                                                            Draft
+                                                                        </span>
+                                                                        <strong class="primary-font">
+                                                                            Test
+                                                                        </strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                2 questions
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <span class="label ongoing">
+                                                                            Ongoing
+                                                                        </span>
+                                                                        <strong class="primary-font">
+                                                                            Jan 14, 2019 survey
+                                                                        </strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="survey-source form-inline">
+                                                                    <label class="" for="publicLink">
+                                                                        Public link:
+                                                                    </label>
+                                                                    <input class="form-control" id="publicLink" placeholder="https:wp.com/survey/159da36" type="text">
+                                                                    </input>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                2 questions
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <span class="label delete">
+                                                                            Closed
+                                                                        </span>
+                                                                        <strong class="primary-font">
+                                                                            Quick survey
+                                                                        </strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                6 questions
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <span class="label delete">
+                                                                            Closed
+                                                                        </span>
+                                                                        <strong class="primary-font">
+                                                                            Customer satisfaction 02_06_2017
+                                                                        </strong>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                13 questions
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane clearfix" id="crm-list-results">
+                        <div class="row tab-content-header">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 pull-left filter-container">
+                                        <select class="selectpicker" name="filter">
+                                            <option>
+                                                Newest First
+                                            </option>
+                                            <option>
+                                                Oldest First
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 pull-right create-new-survey-container page-status d-flex">
+                                        <button class="btn bg-default btn-download" data-target="#create-new-survey-modal" data-toggle="modal" type="">
+                                            Create new Survey
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-container row clearfix">
+                            <div class="col-md-12 contract-content-container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card-section-list clearfix" data-role="contract-section-list">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <strong class="primary-font">
+                                                                            Quick survey
+                                                                        </strong>
+                                                                        <span class="helper-text d-block">
+                                                                            6 questions
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                completed by
+                                                                <span class="survey-done-by">
+                                                                    Patrick Arnaud
+                                                                </span>
+                                                                - Mar 15, 2018
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-12 card card-contract">
+                                                        <div class="col-md-6 list-head-container">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="status-label">
+                                                                        <strong class="primary-font">
+                                                                            Customer satisfaction 02_06_2017
+                                                                        </strong>
+                                                                        <span class="helper-text d-block">
+                                                                            13 questions
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 list-footer-container no-of-questions text-right">
+                                                            <span class="helper-text">
+                                                                completed by
+                                                                <span class="survey-done-by">
+                                                                    Samira Hamdaoui
+                                                                </span>
+                                                                - Mar 10, 2018
+                                                            </span>
+                                                        </div>
+                                                        <div class="cta-container">
+                                                            <div class="cta">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Close">
+                                                                            <i class="material-icons">
+                                                                                lock_outline
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Duplicate">
+                                                                            <i class="material-icons">
+                                                                                content_copy
+                                                                            </i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span data-target="#deleteConfirmation" data-toggle="modal">
+                                                                            <a data-placement="bottom" data-toggle="tooltip" href="javascript:void(0);" title="Delete">
+                                                                                <i class="material-icons">
+                                                                                    delete
+                                                                                </i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

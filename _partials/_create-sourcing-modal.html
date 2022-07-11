@@ -1,0 +1,124 @@
+<div aria-labelledby="create-sourcing-modal" class="modal fade create-sourcing-modal" id="createSourcingModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<span class="close">
+					<a data-dismiss="modal" href="javascript:;">
+						<i class="material-icons">
+						close
+						</i>
+					</a>
+				</span>
+				<div class="modal-title mb-15">
+					Sourcing name <span class="edit ml-10"><a href="javascript:void(0);" id="editCreateSourcingTitle">Edit <i class="material-icons">mode_edit</i></a></span>
+				</div>
+				<div class="modal-title-edit col-md-10 pl-0  mb-15">
+					<div class="input-group d-flex">
+						<input type="text" placeholder="Edit Title" class="form-control" value="Sourcing name">
+						<button type="" id="saveModalTitle" class="btn btn-fill btn-wd btn-yes">Save</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 create-sourcing-container  mb-15">
+						<div class="row">
+                            <div class="col-md-6 sourcing-client-module mb-15">
+                                <label>Business unit <span class="required">*</span></label>
+                                <select class="selectpicker" multiple data-live-search="false" data-selected-text-format="count > 3" title="Choose a business unit" id="">
+                                    <option data-hidden="true"></option>
+                                    <option value="0">Content for business</option>
+                                    <option value="1">Falana</option>
+                                    <option value="2">Dimca</option>
+                                </select>
+                            </div>
+							<div class="col-md-6 sourcing-client-module mb-15">
+								<label>Client name <span class="required">*</span></label>
+								<select class="chosen-default" data-placeholder="Choose a client...">
+									<option value=""></option>
+									<option data-img-src="lbd/img/webedia.jpg">
+										<span class="client-id">C002</span> Webedia Group
+									</option>
+									<option data-img-src="lbd/img/apple.jpg">
+										<span class="client-id">C001</span> Apple Inc
+									</option>
+									<option data-img-src="lbd/img/adobe.jpg">
+										<span class="client-id">C003</span> Adobe Inc
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 create-client-link mb-10">
+								<a href="javascript:;" data-toggle="modal" data-target="#create-new-client-modal">+ Create new client</a>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-md-6 sourcing-client-module  mb-15">
+								<label>Duration</label>
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" class="form-control" placeholder="ex : 5">
+									</div>
+									<div class="col-md-6">
+										<select name="" class="selectpicker">
+											<option>days</option>
+											<option>weeks</option>
+											<option>months</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 sourcing-client-module">
+								<div class="row">
+									<div class="col-md-6">
+										<label>Starting date</label>
+										<input class="form-control datepicker" placeholder="Pick a date here" type="text"/>
+									</div>
+									<div class="col-md-6">
+										<label>Ending date</label>
+										<input class="form-control datepicker" placeholder="Pick a date here" type="text"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5 sourcing-client-module  mb-15">
+								<label>Sourcing Credit</label>
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" class="form-control" placeholder="ex : 150000">
+									</div>
+									<div class="col-md-6">
+										<select name="" class="selectpicker">
+											<option>euros (&#8364;)</option>
+											<option>pounds (&#163;)</option>
+											<option>dollars (&#36;)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7 sourcing-client-module">
+								<label>Sourcing owner <span class="required">*</span></label>
+								<select class="chosen-default">
+									<option data-img-src="lbd/img/default-avatar.png">Clarisse Mercier
+									</option>
+									<option data-img-src="lbd/img/default-avatar.png">Michael Martin</option>
+									<option data-img-src="lbd/img/default-avatar.png">Seb Chateau</option>
+									<option data-img-src="lbd/img/default-avatar.png">Arun Prod</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 tab-navigation">
+						<button type="button" class="btn btn-info btn-fill btn-no pull-left" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-info btn-fill btn-yes pull-right">Create sourcing</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

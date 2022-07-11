@@ -1,0 +1,49 @@
+list of static pages for BO
+
+Note : All static pages are accicible in this url https://ep-test.contentplace.io/webapp-theme/
+
+1. admin-list.html
+2. billing-modal.html
+3. bu-single-expense.html
+4. bu-single.html
+5. card-overview-test-article.html
+6. card-overview.html
+7. card-single.html
+8. client-profile.html
+9. clients.html
+10. contract-overview-expense.html
+11. contract-overview-tech.html
+12. contract-overview.html
+13. contracts.html
+14. contributors.html
+15. homepage.html
+16. job-validation.html
+17. layout-1.html
+18. layout-2.html
+19. layout-3.html
+20. layout-4.html
+21. layout-5.html
+22. login-rem.html
+23. login.html
+24. mission-overviewv1.html
+25. mission-overviewv2.html
+26. mission-overviewv3.html
+27. mission.html
+28. notifications.html
+29. offers-list.html
+30. production.html
+31. quizz-surveys-list.html
+32. quizz.html
+33. quote-expense.html
+34. quote-tech.html
+35. quote.html
+36. quotes-list.html
+37. recruitemnt.html
+38. source-mission.html
+39. sourcing-candidates-list.html
+40. sourcing-list.html
+41. sourcing-offers-single.html
+42. sourcing-overview.html
+43. sourcing-team-list.html
+44. sourcing-teamlist.html
+45. sourcing-test-article.html

@@ -1,0 +1,1179 @@
+<div aria-labelledby="create-offer-job-modal" class="modal fade create-offer-job-modal" id="createOfferJobModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<span class="close">
+					<a data-dismiss="modal" href="javascript:;">
+						<i class="material-icons">
+						close
+						</i>
+					</a>
+				</span>
+				<div class="modal-title">
+					Create a job<span class="edit ml-10"><a href="javascript:void(0);" id="editCreateJobTitle">Edit <i class="material-icons">mode_edit</i></a></span>
+				</div>
+                <div class="modal-title-edit col-md-10 pl-0  mb-15">
+                    <div class="input-group d-flex">
+                        <input type="text" placeholder="Edit Title" class="form-control" value="Create a job">
+                        <button type="" id="saveJobTitle" class="btn btn-fill btn-wd btn-yes">Save</button>
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col-md-12 create-offers-job-settings">
+						<div class="col-md-12 progress-steps">
+							<div id="wizardCard">
+								<form action="" id="wizardForm" method="">
+									<div class="tab-links">
+										<ul class="nav">
+											<li>
+												<a data-toggle="tab" href="#tab-generalSettings">
+													General settings
+												</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab-availabilities">
+													Availabilities
+												</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab-quizz">
+													Quizz
+												</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab-survey">
+													Survey
+												</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab-test">
+													Test
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane" id="tab-generalSettings">
+												<div class="row">
+													<div class="col-md-12 general-settings-container">
+														<h4 class="title">Job and brief</h4>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<label>
+																	Job
+																</label>
+																<select class="selectpicker" title="Select a job">
+																	<option data-hidden="true"></option>
+																	<option>Translator</option>
+																	<option>Writer</option>
+																	<option>Proofreader</option>
+																</select>
+															</div>
+															<div class="col-md-6 general-settings-module">
+																<div class="row">
+																	<div class="col-md-4">
+																		<label>Qty *</label>
+																		<input type="number" class="form-control" placeholder="ex : 3" />
+																	</div>
+																	<div class="col-md-4">
+																		<label># Candidate max</label>
+																		<input type="number" class="form-control" placeholder="ex : 40" />
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<label>Language *</label>
+																<select class="chosen-default chosen-select-deselect flags" data-placeholder="Select a language">
+																	<option value=""></option>
+																	<option selected data-img-src="lbd/img/flag/us.gif">
+																		EN (US)
+																	</option>
+																	<option data-img-src="lbd/img/flag/fr.gif">
+																		FR
+																	</option>
+																	<option data-img-src="lbd/img/flag/uk.gif">
+																		EN (UK)
+																	</option>
+																	<option data-img-src="lbd/img/flag/sp.gif">
+																		ES
+																	</option>
+																	<option data-img-src="lbd/img/flag/pol.gif">
+																		PO
+																	</option>
+																</select>
+															</div>
+															<div class="col-md-6 general-settings-module">
+																<label>Destination language (if translation)</label>
+																<select class="chosen-default chosen-select-deselect flags" data-placeholder="Select a language">
+																	<option value=""></option>
+																	<option selected data-img-src="lbd/img/flag/us.gif">
+																		EN (US)
+																	</option>
+																	<option data-img-src="lbd/img/flag/fr.gif">
+																		FR
+																	</option>
+																	<option data-img-src="lbd/img/flag/uk.gif">
+																		EN (UK)
+																	</option>
+																	<option data-img-src="lbd/img/flag/sp.gif">
+																		ES
+																	</option>
+																	<option data-img-src="lbd/img/flag/pol.gif">
+																		PO
+																	</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 general-settings-module">
+																<label>Bidding</label>
+																<select class="selectpicker" title="Select your bidding">
+																	<option data-hidden="true"></option>
+																	<option>Price per item</option>
+																	<option>Price per item 1</option>
+																	<option>Price per item 2</option>
+																</select>
+															</div>
+															<div class="col-md-2 general-settings-module mb-0">
+																<label>Min. Cost</label>
+																<input type="number" class="form-control" placeholder="ex : 40" />
+															</div>
+															<div class="col-md-2 general-settings-module  mb-0">
+																<label>Max. Cost</label>
+																<input type="number" class="form-control" placeholder="ex : 40" />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 general-settings-module mt-25 mb-0">
+																<label class="checkbox include-check">
+																	<input data-toggle="checkbox" type="checkbox" value="">
+																	Allow to exceed maximum price
+																	</input>
+																</label>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 general-settings-module">
+																<label>Service</label>
+																<select class="selectpicker" title="Select a service">
+																	<option data-hidden="true"></option>
+																	<option>Editorial</option>
+																	<option>Editorial 2</option>
+																	<option>Editorial 3</option>
+																</select>
+															</div>
+															<div class="col-md-4 general-settings-module">
+																<label>Type</label>
+																<select class="selectpicker" title="Select a type">
+																	<option data-hidden="true"></option>
+																	<option>Translation</option>
+																	<option>Translation 2</option>
+																	<option>Translation 3</option>
+																</select>
+															</div>
+															<div class="col-md-4 general-settings-module">
+																<label>Product</label>
+																<select class="selectpicker" title="Select a product">
+																	<option data-hidden="true"></option>
+																	<option>Product</option>
+																	<option>Product 2</option>
+																	<option>Product 3</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 general-settings-module">
+																<label>Number of words</label>
+																<input type="number" class="form-control" placeholder="ex : 400" />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 general-settings-module">
+																<input id="upload-general-settings-file" type="file">
+																<a class="add-general-settings-file" href="javascript:;">
+																	+ Add brief
+																</a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 general-settings-module">
+																<div class="added-general-settings-file-container">
+																	<div class="added-general-settings-file">
+																		<div class="col-md-1"><i class="material-icons pull-right">insert_drive_file</i></div>
+																		<div class="col-md-10 file-name">Allocine_brief-writer.pdf</div>
+																		<div class="col-md-1">
+																			<a href="javascript:;">
+																				<i class="material-icons">delete</i>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Show bidding range to contributor:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Show to public:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<h4 class="title">Timing</h4>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<label>Application phase - End time *</label>
+																<div class="row">
+																	<div class="col-md-6">
+																		<input class="form-control datepicker" placeholder="Date Here" type="text"/>
+																	</div>
+																	<div class="col-md-5">
+																		<input type="text" class="form-control timepicker" placeholder="Time Here"/>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6 general-settings-module">
+																<label>Selection phase - End time *</label>
+																<div class="row">
+																	<div class="col-md-6">
+																		<input class="form-control datepicker" placeholder="Date Here" type="text"/>
+																	</div>
+																	<div class="col-md-5">
+																		<input type="text" class="form-control timepicker" placeholder="Time Here"/>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<h4 class="title">Stakeholders</h4>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<div class="search-user">
+																	<input type="text" class="form-control" placeholder="Search user" />
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 general-settings-module">
+																<div class="col-md-12 card contract-owner-box stakeholder">
+																	<div class="col-md-8 contract-owner">
+																		<div class="user-image">
+																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																		</div>
+																		<div class="user-name-block">
+																			<div class="user-name">
+																				Lucie Zvanovec <span>Product Designer</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 update-contract-owner">
+																		<span class="edit pull-right">
+																			<i class="material-icons">close</i>
+																			<a href="javascript:;">
+																				Remove
+																			</a>
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6 general-settings-module">
+																<div class="col-md-12 card contract-owner-box stakeholder">
+																	<div class="col-md-8 contract-owner">
+																		<div class="user-image">
+																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																		</div>
+																		<div class="user-name-block">
+																			<div class="user-name">
+																				Lucie Zvanovec <span>Product Designer</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 update-contract-owner">
+																		<span class="edit pull-right">
+																			<i class="material-icons">close</i>
+																			<a href="javascript:;">
+																				Remove
+																			</a>
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6 general-settings-module">
+																<div class="col-md-12 card contract-owner-box stakeholder">
+																	<div class="col-md-8 contract-owner">
+																		<div class="user-image">
+																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																		</div>
+																		<div class="user-name-block">
+																			<div class="user-name">
+																				Lucie Zvanovec <span>Product Designer</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-md-4 update-contract-owner">
+																		<span class="edit pull-right">
+																			<i class="material-icons">close</i>
+																			<a href="javascript:;">
+																				Remove
+																			</a>
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 tab-navigation">
+														<div class="row">
+															<div class="col-md-4">
+																<button class="btn btn-cancel btn-fill btn-wd btn-no btn-cancel-settings pull-left" type="button" data-dismiss="modal">
+																Cancel
+																</button>
+															</div>
+															<div class="col-md-5 pull-right">
+																<button class="btn btn-confirm btn-fill btn-wd btn-yes pull-left" type="button">
+																Save draft
+																</button>
+																<button class="btn btn-yes btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+																Next
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab-availabilities">
+												<div class="row">
+													<div class="col-md-12 availabilities-container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <h4 class="title">Availabilities</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 availabilities-module">
+                                                                        <div class="col-md-12 activation-border">
+                                                                            <div class="col-md-12 activation-container">
+                                                                                <div class="col-md-2 activation-switch">
+                                                                                    <div class="switch switch-mini" data-off-label="" data-on-label="">
+                                                                                        <input type="checkbox"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-9 activation-statement">
+                                                                                    Ask for availabilties:
+                                                                                    <span class="no">
+                                                                                        NO
+                                                                                    </span>
+                                                                                    <span class="yes">
+                                                                                        YES
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h4 class="title">Production capacity</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 availabilities-module">
+                                                                        <div class="col-md-12 activation-border">
+                                                                            <div class="col-md-12 activation-container">
+                                                                                <div class="col-md-2 activation-switch">
+                                                                                    <div class="switch switch-mini" data-off-label="" data-on-label="">
+                                                                                        <input type="checkbox"/>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-9 activation-statement">
+                                                                                    Ask for production capacity:
+                                                                                    <span class="no">
+                                                                                        NO
+                                                                                    </span>
+                                                                                    <span class="yes">
+                                                                                        YES
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="available-requirements mb-15">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h4 class="title">Availabilities</h4>
+                                                                    <p><b>Please give an estimation of the mission dates</b> for contributor to share their availabilities within this period.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="available-requirements">
+                                                            <div class="row">
+                                                                <div class="col-md-3 availabilities-module">
+                                                                    <label>Start date *</label>
+                                                                    <input class="form-control datepicker" placeholder="Date Here" type="text" disabled />
+                                                                </div>
+                                                                <div class="col-md-3 availabilities-module">
+                                                                    <label>End date *</label>
+                                                                    <input class="form-control datepicker" placeholder="Date Here" type="text" disabled/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-3 availabilities-module">
+                                                                    <label>Start date *</label>
+                                                                    <input class="form-control datepicker" placeholder="Date Here" type="text"/>
+                                                                </div>
+                                                                <div class="col-md-3 availabilities-module">
+                                                                    <label>End date *</label>
+                                                                    <input class="form-control datepicker" placeholder="Date Here" type="text"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="available-requirements mb-15">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h4 class="title">Production capacity</h4>
+                                                                    <p>How may [<b>items</b>]does the contributor can create in [<b>a certain range of time</b>] ?</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="available-requirements">
+                                                            <div class="row">
+                                                                <div class="col-md-6 availabilities-module">
+                                                                    <label>Item *</label>
+                                                                    <select class="selectpicker" title="Select product">
+                                                                        <option data-hidden="true"></option>
+                                                                        <option>Article</option>
+                                                                        <option>Word</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 availabilities-module">
+                                                                    <label>Time range *</label>
+                                                                    <select class="selectpicker" title="Select time">
+                                                                        <option data-hidden="true"></option>
+                                                                        <option>1 day</option>
+                                                                        <option>1 week</option>
+                                                                        <option>1 month</option>
+                                                                        <option>Availibility time range</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6 availabilities-module">
+                                                                    <label>Item *</label>
+                                                                    <select class="selectpicker" title="Select product" disabled>
+                                                                        <option data-hidden="true"></option>
+                                                                        <option>Article</option>
+                                                                        <option>Word</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 availabilities-module">
+                                                                    <label>Time range *</label>
+                                                                    <select class="selectpicker" title="Select time" disabled>
+                                                                        <option data-hidden="true"></option>
+                                                                        <option>1 day</option>
+                                                                        <option>1 week</option>
+                                                                        <option>1 month</option>
+                                                                        <option>Availibility time range</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 tab-navigation">
+														<div class="row">
+															<div class="col-md-4">
+																<button class="btn btn-info btn-fill btn-wd btn-no btn-back pull-left" type="button">
+																Back
+																</button>
+															</div>
+															<div class="col-md-5 pull-right">
+																<button class="btn btn-confirm btn-fill btn-wd btn-yes pull-left" type="button">
+																Save draft
+																</button>
+																<button class="btn btn-yes btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+																Next
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab-quizz">
+												<div class="row">
+													<div class="col-md-12 question-list-container quizz-container">
+														<div class="header-title">
+															<h4 class="title">Quizz</h4>
+														</div>
+														<div class="row">
+															<div class="col-md-6 quizz-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch switch-mini" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Activate quizz:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+																<p class="activation-alert">Your candidates will not be assessed with a quizz</p>
+															</div>
+															<div class="col-md-6 quizz-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch switch-mini" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Quizz assignation:
+																			<span class="no">
+																				MANUAL
+																			</span>
+																			<span class="yes">
+																				AUTOMATIC
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 quizz-module">
+																<div class="col-md-12 template-selection-container">
+																	<label>Select a Quizz template *</label>
+																	<div class="quizz-template-selection mb-10">
+																		<select class="selectpicker" title="Choose a template...">
+																			<option data-hidden="true"></option>
+																			<option>Template 1</option>
+																			<option>Template 2</option>
+																			<option>Template 3</option>
+																			<option>Template 4</option>
+																			<option>Template 5</option>
+																			<option>Template 6</option>
+																			<option>Template 7</option>
+																			<option>Template 8</option>
+																			<option>Template 9</option>
+																			<option>Template 10</option>
+																		</select>
+																		<button class="btn btn-download btn-wd btn-preview disabled">Preview</button>
+																	</div>
+																	<a href="javascript:;">Browse templates</a>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 quizz-module">
+																<div class="col-md-12 template-selection-container">
+																	<label>Select a Quizz template *</label>
+																	<div class="quizz-template-selection mb-10">
+																		<select class="selectpicker" title="Choose a template...">
+																			<option data-hidden="true"></option>
+																			<option>Template 1</option>
+																			<option>Template 2</option>
+																			<option>Template 3</option>
+																			<option>Template 4</option>
+																			<option>Template 5</option>
+																			<option>Template 6</option>
+																			<option>Template 7</option>
+																			<option>Template 8</option>
+																			<option>Template 9</option>
+																			<option>Template 10</option>
+																		</select>
+																		<button class="btn btn-download btn-wd btn-preview">Preview</button>
+																	</div>
+																	<a href="javascript:;">Browse templates</a>
+																</div>
+															</div>
+														</div>
+														<div class="header-title">
+															<h4 class="title">Template settings</h4>
+														</div>
+														<div class="row">
+															<div class="col-md-6 quizz-module">
+																<div class="row">
+																	<div class="col-md-6">
+																		<label>Required score *</label>
+																		<input type="number" class="form-control" placeholder="Ex: 7" />
+																	</div>
+																	<div class="col-md-6">
+																		<label>Total questions</label>
+																		<input type="number" class="form-control" placeholder="Ex: 10" disabled="disabled" />
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-3 pull-right">
+																<label>Time limit *</label>
+																<select class="selectpicker">
+																	<option>01:00 min</option>
+																	<option>02:00 min</option>
+																	<option>05:00 min</option>
+																	<option>10:00 min</option>
+																	<option>15:00 min</option>
+																	<option>20:00 min</option>
+																	<option>25:00 min</option>
+																	<option>30:00 min</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 mt-30">
+																<button class="btn btn-info btn-fill btn-wd btn-no btn-back pull-left" type="button">
+																Back
+																</button>
+															</div>
+															<div class="col-md-5 pull-right mt-30">
+																<button class="btn btn-confirm btn-fill btn-wd btn-yes pull-left" type="button">
+																Save draft
+																</button>
+																<button class="btn btn-yes btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+																Next
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab-survey">
+												<div class="row">
+													<div class="col-md-12 question-list-container survey-container">
+														<div class="header-title">
+															<h4 class="title">Survey</h4>
+														</div>
+														<div class="row">
+															<div class="col-md-6 survey-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch switch-mini" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Activate survey:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+																<p class="activation-alert">Your candidates will not be assessed with a survey</p>
+															</div>
+															<div class="col-md-6 survey-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch switch-mini" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Survey assignation:
+																			<span class="no">
+																				MANUAL
+																			</span>
+																			<span class="yes">
+																				AUTOMATIC
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 survey-module">
+																<div class="col-md-12 template-selection-container">
+																	<label>Select a Survey template *</label>
+																	<div class="quizz-template-selection mb-10">
+																		<select class="selectpicker" title="Choose a template...">
+																			<option data-hidden="true"></option>
+																			<option>Template 1</option>
+																			<option>Template 2</option>
+																			<option>Template 3</option>
+																			<option>Template 4</option>
+																			<option>Template 5</option>
+																			<option>Template 6</option>
+																			<option>Template 7</option>
+																			<option>Template 8</option>
+																			<option>Template 9</option>
+																			<option>Template 10</option>
+																		</select>
+																		<button class="btn btn-download btn-wd btn-preview disabled">Preview</button>
+																	</div>
+																	<a href="javascript:;">Browse templates</a>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 survey-module">
+																<div class="col-md-12 template-selection-container">
+																	<label>Select a Survey template *</label>
+																	<div class="quizz-template-selection mb-10">
+																		<select class="selectpicker" title="Choose a template...">
+																			<option data-hidden="true"></option>
+																			<option>Template 1</option>
+																			<option>Template 2</option>
+																			<option>Template 3</option>
+																			<option>Template 4</option>
+																			<option>Template 5</option>
+																			<option>Template 6</option>
+																			<option>Template 7</option>
+																			<option>Template 8</option>
+																			<option>Template 9</option>
+																			<option>Template 10</option>
+																		</select>
+																		<button class="btn btn-download btn-wd btn-preview">Preview</button>
+																	</div>
+																	<a href="javascript:;">Browse templates</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-4 mt-30">
+														<button class="btn btn-info btn-fill btn-wd btn-no btn-back pull-left" type="button">
+														Back
+														</button>
+													</div>
+													<div class="col-md-5 pull-right mt-30">
+														<button class="btn btn-confirm btn-fill btn-wd btn-yes pull-left" type="button">
+														Save draft
+														</button>
+														<button class="btn btn-yes btn-fill btn-wd btn-yes pull-right btn-next" type="button">
+														Next
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab-test">
+												<div class="row">
+													<div class="col-md-12 job-tests-container">
+														<div class="row">
+															<div class="col-md-6 job-tests-module">
+																<div class="header-title">
+																	<h4 class="title">Test article</h4>
+																</div>
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Test articles:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6 job-tests-module test-job-title">
+																<label>Title</label>
+																<input type="text" class="form-control" placeholder="ex : Test-article job" />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 job-tests-module">
+																<label>Service *</label>
+																<select class="selectpicker" title="Select a service">
+																	<option data-hidden="true"></option>
+																	<option>Editorial</option>
+																	<option>Service 1</option>
+																	<option>Service 2</option>
+																	<option>Service 3</option>
+																</select>
+															</div>
+															<div class="col-md-4 job-tests-module">
+																<label>Type *</label>
+																<select class="selectpicker" title="Select a type">
+																	<option data-hidden="true"></option>
+																	<option>Translation</option>
+																	<option>Type 1</option>
+																	<option>Type 2</option>
+																	<option>Type 3</option>
+																</select>
+															</div>
+															<div class="col-md-4 job-tests-module">
+																<label>Product *</label>
+																<select class="selectpicker" title="Select a product">
+																	<option data-hidden="true"></option>
+																	<option>DP</option>
+																	<option>Product 1</option>
+																	<option>Product 2</option>
+																	<option>Product 3</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 job-tests-module">
+																<label>Number of words *</label>
+																<input type="number" class="form-control" placeholder="ex : 400" />
+															</div>
+															<!-- <div class="col-md-3 job-tests-module">
+																		<label>Time spent *</label>
+																		<input type="text" class="form-control" pattern="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}" placeholder="ex : 24:00:00" />
+															</div> -->
+														</div>
+														<!-- <div class="row">
+																	<div class="col-md-3 job-tests-module">
+																				<label>Production time duration</label>
+																				<input type="number" class="form-control" placeholder="ex : 169" />
+																	</div>
+																	<div class="col-md-3 job-tests-module test-job-title mt-25">
+																				<select class="selectpicker" title="Select a time unit">
+																							<option data-hidden="true"></option>
+																							<option>hour(s)</option>
+																							<option>day(s)</option>
+																				</select>
+																	</div>
+														</div>
+														<div class="row">
+																	<div class="col-md-6 job-tests-module">
+																				<label>Pricing</label>
+																				<div class="col-md-12 activation-border">
+																							<div class="col-md-12 activation-container">
+																										<div class="col-md-2 activation-switch">
+																													<div class="switch" data-off-label="" data-on-label="">
+																																<input type="checkbox"/>
+																													</div>
+																										</div>
+																										<div class="col-md-9 activation-statement">
+																													Paying articles:
+																													<span class="no">
+																																NO
+																													</span>
+																													<span class="yes">
+																																YES
+																													</span>
+																										</div>
+																							</div>
+																				</div>
+																	</div>
+																	<div class="col-md-3 job-tests-module test-job-title">
+																				<label>Cost *</label>
+																				<input type="number" class="form-control" placeholder="ex : 5.20" />
+																	</div>
+														</div>
+														<div class="row">
+																	<div class="col-md-6 job-tests-module">
+																				<label>Automatic sending</label>
+																				<div class="col-md-12 activation-border">
+																							<div class="col-md-12 activation-container">
+																										<div class="col-md-2 activation-switch">
+																													<div class="switch" data-off-label="" data-on-label="">
+																																<input type="checkbox"/>
+																													</div>
+																										</div>
+																										<div class="col-md-9 activation-statement">
+																													Send articles automatically:
+																													<span class="no">
+																																NO
+																													</span>
+																													<span class="yes">
+																																YES
+																													</span>
+																										</div>
+																							</div>
+																				</div>
+																	</div>
+														</div>
+														<div class="row">
+																	<div class="col-md-6 job-tests-module">
+																				<label>Additional time</label>
+																				<div class="col-md-12 activation-border">
+																							<div class="col-md-12 activation-container">
+																										<div class="col-md-2 activation-switch">
+																													<div class="switch" data-off-label="" data-on-label="">
+																																<input type="checkbox"/>
+																													</div>
+																										</div>
+																										<div class="col-md-9 activation-statement">
+																													Allow additional time:
+																													<span class="no">
+																																NO
+																													</span>
+																													<span class="yes">
+																																YES
+																													</span>
+																										</div>
+																							</div>
+																				</div>
+																	</div>
+																	<div class="col-md-3 job-tests-module test-job-title">
+																				<label></label>
+																				<input type="text" class="form-control" pattern="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}" placeholder="ex : 02:00:00" />
+																	</div>
+														</div>
+														<div class="row">
+																	<div class="col-md-12 job-tests-module">
+																				<div class="row">
+																							<div class="col-md-12 job-tests-module">
+																										<input id="upload-tests-file" type="file">
+																										<a class="add-tests-file" href="javascript:;">
+																													+ Add brief
+																										</a>
+																							</div>
+																				</div>
+																				<div class="row">
+																							<div class="col-md-12 job-tests-module">
+																										<div class="added-tests-file-container">
+																													<div class="added-tests-file">
+																																<div class="col-md-1"><i class="material-icons pull-right">insert_drive_file</i></div>
+																																<div class="col-md-10 file-name">Allocine_brief-writer.pdf</div>
+																																<div class="col-md-1">
+																																			<a href="javascript:;">
+																																						<i class="material-icons">delete</i>
+																																			</a>
+																																</div>
+																													</div>
+																										</div>
+																							</div>
+																				</div>
+																				<h4 class="title">Proofreading</h4>
+																				<div class="row">
+																							<div class="col-md-6 job-tests-module">
+																										<div class="col-md-12 activation-border">
+																													<div class="col-md-12 activation-container">
+																																<div class="col-md-2 activation-switch">
+																																			<div class="switch" data-off-label="" data-on-label="">
+																																						<input type="checkbox"/>
+																																			</div>
+																																</div>
+																																<div class="col-md-9 activation-statement">
+																																			Proofreading:
+																																			<span class="no">
+																																						NO
+																																			</span>
+																																			<span class="yes">
+																																						YES
+																																			</span>
+																																</div>
+																													</div>
+																										</div>
+																							</div>
+																							<div class="col-md-6 job-tests-module">
+																										<div class="col-md-12 activation-border">
+																													<div class="col-md-12 activation-container">
+																																<div class="col-md-2 activation-switch">
+																																			<div class="switch" data-off-label="" data-on-label="">
+																																						<input type="checkbox"/>
+																																			</div>
+																																</div>
+																																<div class="col-md-9 activation-statement">
+																																			Internal:
+																																			<span class="no">
+																																						NO
+																																			</span>
+																																			<span class="yes">
+																																						YES
+																																			</span>
+																																</div>
+																													</div>
+																										</div>
+																							</div>
+																				</div>
+																				<div class="row">
+																							<div class="col-md-6 job-tests-module">
+																										<div class="search-user">
+																													<label>Assign on this job</label>
+																													<input type="text" class="form-control" placeholder="Search user" />
+																										</div>
+																							</div>
+																				</div>
+																				<div class="row">
+																							<div class="col-md-6 job-tests-module">
+																										<div class="col-md-12 card contract-owner-box stakeholder">
+																													<div class="col-md-8 contract-owner">
+																																<div class="user-image">
+																																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																																</div>
+																																<div class="user-name-block">
+																																			<div class="user-name">
+																																						Lucie Zvanovec <span>Product Designer</span>
+																																			</div>
+																																</div>
+																													</div>
+																													<div class="col-md-4 update-contract-owner">
+																																<span class="edit pull-right">
+																																			<i class="material-icons">close</i>
+																																			<a href="javascript:;">
+																																						Remove
+																																			</a>
+																																</span>
+																													</div>
+																										</div>
+																							</div>
+																							<div class="col-md-6 job-tests-module">
+																										<div class="col-md-12 card contract-owner-box stakeholder">
+																													<div class="col-md-8 contract-owner">
+																																<div class="user-image">
+																																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																																</div>
+																																<div class="user-name-block">
+																																			<div class="user-name">
+																																						Lucie Zvanovec <span>Product Designer</span>
+																																			</div>
+																																</div>
+																													</div>
+																													<div class="col-md-4 update-contract-owner">
+																																<span class="edit pull-right">
+																																			<i class="material-icons">close</i>
+																																			<a href="javascript:;">
+																																						Remove
+																																			</a>
+																																</span>
+																													</div>
+																										</div>
+																							</div>
+																							<div class="col-md-6 job-tests-module">
+																										<div class="col-md-12 card contract-owner-box stakeholder">
+																													<div class="col-md-8 contract-owner">
+																																<div class="user-image">
+																																			<img class="img-circle mCS_img_loaded" src="lbd/img/default-avatar.png">
+																																</div>
+																																<div class="user-name-block">
+																																			<div class="user-name">
+																																						Lucie Zvanovec <span>Product Designer</span>
+																																			</div>
+																																</div>
+																													</div>
+																													<div class="col-md-4 update-contract-owner">
+																																<span class="edit pull-right">
+																																			<i class="material-icons">close</i>
+																																			<a href="javascript:;">
+																																						Remove
+																																			</a>
+																																</span>
+																													</div>
+																										</div>
+																							</div>
+																				</div>
+																	</div>
+														</div> -->
+														<div class="row">
+															<div class="col-md-12">
+																<label>Automatic sending</label>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<div class="alert alert-info warning">
+																	<button type="button" aria-hidden="true" class="close" data-dismiss="alert">×</button>
+																	<p><i class="material-icons">warning</i> <strong>Edit your tests settings!</strong> Click on the button to manage your test articles settings.</p>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-6 job-tests-module">
+																<div class="col-md-12 activation-border">
+																	<div class="col-md-12 activation-container">
+																		<div class="col-md-2 activation-switch">
+																			<div class="switch" data-off-label="" data-on-label="">
+																				<input type="checkbox"/>
+																			</div>
+																		</div>
+																		<div class="col-md-9 activation-statement">
+																			Send test automatically:
+																			<span class="no">
+																				NO
+																			</span>
+																			<span class="yes">
+																				YES
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-2 job-tests-module test-job-title mt-5">
+																<a href="javascript:;" class="btn btn-yes full-width" data-toggle="modal" data-target="#testArticlesSettingsModal">Edit settings</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 tab-navigation">
+														<div class="row">
+															<div class="col-md-4">
+																<button class="btn btn-info btn-fill btn-wd btn-no btn-back pull-left" type="button">
+																Back
+																</button>
+															</div>
+															<div class="col-md-5 pull-right">
+																<button class="btn btn-confirm btn-fill btn-wd btn-yes pull-left" type="button">
+																Save draft
+																</button>
+																<button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" onclick="onFinishWizard()" type="button">
+																Create job
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

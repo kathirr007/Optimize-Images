@@ -1,0 +1,494 @@
+<div aria-labelledby="importTeamlist" class="modal fade import-teamlist-modal" id="importTeamlist" role="dialog" tabindex="-1" style="">
+    <div class="modal-dialog modal-lg" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="duplicate-cards clearfix">
+                    <span class="close">
+                        <a data-dismiss="modal" href="javascript:;">
+                            <i class="material-icons">
+                            close
+                            </i>
+                        </a>
+                    </span>
+                    <div class="modal-title">
+                        Import teamlist
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-5 teamlist-filters">
+                                    <div class="row form-group">
+                                        <div class="col-md-12">
+                                            <div class="col-md-12 card mb-15">
+                                                <div class="row">
+                                                    <div class="col-md-12 about">
+                                                        <h4 class="title">Reduction 100 article prio - ete 2019
+                                                        <span>Writing SEO aricles - 500 words</span>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mt-1 total-cost">
+                                                        <label>Total cost</label>
+                                                        0,155€ per word
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 separate-costs">
+                                                        <div class="col-md-12 separate-cost">
+                                                            <div class="card-user pull-left mr-10">
+                                                                <div class="card-user-empty">
+                                                                    Wr
+                                                                </div>
+                                                            </div>
+                                                            0,115€
+                                                        </div>
+                                                        <div class="col-md-12 separate-cost">
+                                                            <div class="card-user pull-left mr-10">
+                                                                <div class="card-user-empty">
+                                                                    Pr
+                                                                </div>
+                                                            </div>
+                                                            0,004€
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="search-input col-md-12">
+                                            <label>Search field</label>
+                                            <input type="text" class="form-control" name="company" required="" placeholder="Search">
+                                            <div class="search-icon search-icon-none"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row form-group">
+                                        <div class="from-filter-container col-md-12">
+                                            <div class="from-filter clearfix">
+                                                <div class="sec-title">From...</div>
+                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Client" id="missions">
+                                                    <option data-hidden="true"></option>
+                                                    <option>Client 00</option>
+                                                    <option>Client 01</option>
+                                                    <option>Client 02</option>
+                                                    <option>Client 03</option>
+                                                    <option>Client 04</option>
+                                                </select>
+                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Contract" id="missions">
+                                                    <option data-hidden="true"></option>
+                                                    <option>Contract 00</option>
+                                                    <option>Contract 01</option>
+                                                    <option>Contract 02</option>
+                                                    <option>Contract 03</option>
+                                                    <option>Contract 04</option>
+                                                </select>
+                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All missions" id="missions">
+                                                    <option data-hidden="true"></option>
+                                                    <option>Mission 00</option>
+                                                    <option>Mission 01</option>
+                                                    <option>Mission 02</option>
+                                                    <option>Mission 03</option>
+                                                    <option>Mission 04</option>
+                                                </select>
+                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="All Owners" id="missions">
+                                                    <option data-hidden="true"></option>
+                                                    <option>Owner 00</option>
+                                                    <option>Owner 01</option>
+                                                    <option>Owner 02</option>
+                                                    <option>Owner 03</option>
+                                                    <option>Owner 04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="row form-group">
+                                        <div class="job-filter-container col-md-12">
+                                            <div class="job-filter clearfix">
+                                                <div class="sec-title">Filter by job</div>
+                                                <ul class="job-filter-checklist">
+                                                    <li>
+                                                        <label class="radio check-all">
+                                                            <input data-toggle="radio" type="radio" name="filterByJob" value="" />
+                                                            All jobs
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio">
+                                                            <input data-toggle="radio" type="radio" name="filterByJob" value="" />
+                                                            Writer
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio">
+                                                            <input data-toggle="radio" type="radio" name="filterByJob" value="" />
+                                                            Proofreader
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio">
+                                                            <input data-toggle="radio" type="radio" name="filterByJob" value="" />
+                                                            Translator
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio">
+                                                            <input data-toggle="radio" type="radio" name="filterByJob" value="" />
+                                                            Translation proofreader
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <!-- <div class="filter-footer">
+                                                    <a href="javascript:;">More jobs</a>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 teamlist-content">
+                                    <div class="row form-group">
+                                        <div class="col-md-12 no-data-container">
+                                            <div class="no-quote-mission-container">
+                                                <div class="no-quote-mission-info">
+                                                    <h4>No results found</h4>
+                                                    <p>Play with filters or type a keyword for selecting a teamlist</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-md-12 contract-content-container">
+                                            <div class="row form-group">
+                                                <div class="col-md-12">
+                                                    <div class="main-panel-header df-ac">
+                                                        <div class="col-md-9 pull-left lists-status">
+                                                            <span class="fw600">
+                                                                15 teamlists
+                                                            </span>
+                                                            matching your criterias
+                                                        </div>
+                                                        <div class="col-md-3 pull-right pr-0">
+                                                            <select class="selectpicker">
+                                                                <option data-img-src="lbd/img/default-avatar.png">
+                                                                    Newest first
+                                                                </option>
+                                                                <option data-img-src="lbd/img/default-avatar.png">
+                                                                    Oldest first
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card-section-list" data-role="contract-section-list">
+                                                        <ul class="teamlist-container">
+                                                            <li class="list-item" id="">
+                                                                <div class="col-md-12 card">
+                                                                    <div class="card-contract">
+                                                                        <label class="col-md-1 radio">
+                                                                            <input id="check2" type="radio" data-toggle="radio" name="selectTeamList" value="">
+                                                                        </label>
+                                                                        <div class="col-md-6 list-details">
+                                                                            Millenial - Articles e-sports 2018 - Proofreading
+                                                                            <span class="d-block">4/10 selected - 0 backup</span>
+                                                                        </div>
+                                                                        <div class="col-md-5 list-created">
+                                                                            <!-- Max: 0,04 cost / word -->
+                                                                            <span>11/03/2018</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item" id="accordion">
+                                                                <div class="col-md-12 card">
+                                                                    <div class="card-contract">
+                                                                        <label class="col-md-1 radio hidden">
+                                                                            <input id="check2" type="radio" data-toggle="radio" name="selectTeamList" value="">
+                                                                        </label>
+                                                                        <div class="col-md-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 mb-10">
+                                                                                    <label>Title</label>
+                                                                                    <input type="text" class="form-control fw700" value="Millenial - Articles e-sports 2018 - Proofreading" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 list-details">
+                                                                                    <span class="d-block">4/10 selected - 0 backup</span>
+                                                                                </div>
+                                                                                <div class="col-md-6 list-created">
+                                                                                    Max: 0,04 cost / word
+                                                                                    <span>11/03/2018</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1 chevron hidden">
+                                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                                                                                <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 collapse mt-15" id="collapse1">
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Halen Glaberson
+                                                                                <div class="status-label">
+                                                                                    <span class="label junior">Junior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,40 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <div class="card-user-empty user" data-toggle="tooltip" data-container="body" data-placement="bottom" title="" data-original-title="PC">
+                                                                                    PC
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="contributor-info">Alice Brace
+                                                                                <div class="status-label">
+                                                                                    <span class="label senior">Senior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,03 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <div class="card-user-empty user" data-toggle="tooltip" data-container="body" data-placement="bottom" title="" data-original-title="PC">
+                                                                                    PC
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="contributor-info">James Dean
+                                                                                <div class="status-label">
+                                                                                    <span class="label beginner">Beginner</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,035 €
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item" id="accordion">
+                                                                <div class="col-md-12 card">
+                                                                    <div class="card-contract">
+                                                                        <label class="col-md-1 radio">
+                                                                            <input id="check2" type="radio" data-toggle="radio" name="selectTeamList" value="">
+                                                                        </label>
+                                                                        <div class="col-md-5 list-details">
+                                                                            Proofreader - ENG
+                                                                            <span class="d-block">3/3 selected - 2 backup</span>
+                                                                        </div>
+                                                                        <div class="col-md-5 list-created">
+                                                                            Max: 0,02 cost / word
+                                                                            <span>03/03/2018</span>
+                                                                        </div>
+                                                                        <div class="col-md-1 chevron">
+                                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                                                                <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 collapse mt-15" id="collapse2">
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Halen Glaberson
+                                                                                <div class="status-label">
+                                                                                    <span class="label junior">Junior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,40 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Alice Brace
+                                                                                <div class="status-label">
+                                                                                    <span class="label senior">Senior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,03 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">James Dean
+                                                                                <div class="status-label">
+                                                                                    <span class="label beginner">Beginner</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,035 €
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item" id="accordion">
+                                                                <div class="col-md-12 card">
+                                                                    <div class="card-contract">
+                                                                        <label class="col-md-1 radio">
+                                                                            <input id="check2" type="radio" data-toggle="radio" name="selectTeamList" value="">
+                                                                        </label>
+                                                                        <div class="col-md-5 list-details">
+                                                                            Proofreader - ENG
+                                                                            <span class="d-block">3/3 selected - 2 backup</span>
+                                                                        </div>
+                                                                        <div class="col-md-5 list-created">
+                                                                            Max: 0,02 cost / word
+                                                                            <span>03/03/2018</span>
+                                                                        </div>
+                                                                        <div class="col-md-1 chevron">
+                                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                                                                <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 collapse mt-15" id="collapse3">
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Halen Glaberson
+                                                                                <div class="status-label">
+                                                                                    <span class="label junior">Junior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,40 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Alice Brace
+                                                                                <div class="status-label">
+                                                                                    <span class="label senior">Senior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,03 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">James Dean
+                                                                                <div class="status-label">
+                                                                                    <span class="label beginner">Beginner</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,035 €
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-item" id="accordion">
+                                                                <div class="col-md-12 card">
+                                                                    <div class="card-contract">
+                                                                        <label class="col-md-1 radio">
+                                                                            <input id="check2" type="radio" data-toggle="radio" name="selectTeamList" value="">
+                                                                        </label>
+                                                                        <div class="col-md-5 list-details">
+                                                                            Proofreader - ENG
+                                                                            <span class="d-block">3/3 selected - 2 backup</span>
+                                                                        </div>
+                                                                        <div class="col-md-5 list-created">
+                                                                            Max: 0,02 cost / word
+                                                                            <span>03/03/2018</span>
+                                                                        </div>
+                                                                        <div class="col-md-1 chevron">
+                                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                                                                <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 collapse mt-15" id="collapse4">
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Halen Glaberson
+                                                                                <div class="status-label">
+                                                                                    <span class="label junior">Junior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,40 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">Alice Brace
+                                                                                <div class="status-label">
+                                                                                    <span class="label senior">Senior</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,03 €
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contributor">
+                                                                            <div class="user-image">
+                                                                                <img src="lbd/img/default-avatar.png" class="img-circle mCS_img_loaded">
+                                                                            </div>
+                                                                            <div class="contributor-info">James Dean
+                                                                                <div class="status-label">
+                                                                                    <span class="label beginner">Beginner</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bidding-info">
+                                                                                0,035 €
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider navigation-divider"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back" type="button" data-dismiss="modal">
+                                    Cancel
+                                    </button>
+                                    <button class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" type="button">
+                                    Import
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

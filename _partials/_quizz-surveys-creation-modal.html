@@ -1,0 +1,204 @@
+<div aria-labelledby="" class="modal fade quizz-surveys-creation-modal" id="quizzSurveysCreation" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<span class="close">
+					<a data-dismiss="modal" href="javascript:;">
+						<i class="material-icons">
+						close
+						</i>
+					</a>
+				</span>
+				<div class="modal-title">
+					Create questionnaire
+				</div>
+				<div class="row">
+					<div class="col-md-12 create-offers-job-settings">
+						<div class="col-md-12 progress-steps">
+							<div id="wizardCardTapable">
+								<form action="" id="wizardForm" method="">
+									<div class="tab-links">
+										<ul class="nav">
+											<li>
+												<a data-toggle="tab" href="#tab-quizz">
+													Quizz
+												</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#tab-survey">
+													Survey
+												</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane" id="tab-quizz">
+												<div class="row">
+													<div class="col-md-12 question-list-container quizz-container">
+														<div class="row form-group">
+															<div class="col-md-12 quizz-module">
+																<label>Quizz Name <span class="required">*</span></label>
+																<input type="" class="form-control" placeholder="Type quizz name" />
+															</div>
+														</div>
+                                                        <div class="row form-group">
+                                                            <div class="col-md-12 quizz-module">
+                                                                <label>Business Unit <span class="required">*</span></label>
+                                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Choose a business unit" id="">
+                                                                    <option data-hidden="true"></option>
+                                                                    <option value="0">Content for business</option>
+                                                                    <option value="1">Falana</option>
+                                                                    <option value="2">Dimca</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+														<div class="row form-group">
+															<div class="col-md-12 quizz-module">
+																<label>Tags</label>
+																<input type="text" class="form-control selectpicker" id="quizzSurveysHashtag-01" value="" placeholder="Type tags and enter" />
+															</div>
+														</div>
+														<div class="row form-group">
+															<div class="col-md-12 quizz-module">
+																<label>Category</label>
+																<select class="selectpicker" title="Select category">
+							                                        <option>Creation &amp; Entertainment</option>
+							                                        <option>Creation</option>
+							                                        <option>Entertainment</option>
+							                                        <option>Social Media</option>
+							                                    </select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 quizz-module">
+																<label>Introduction Text</label>
+																<textarea class="form-control" id="edit-textarea-normal-04" placeholder="Type description text here.." rows="3"></textarea>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<div class="divider clearfix">
+																	<div class="row form-group">
+																		<div class="col-md-6 quizz-module">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<label>Question Number <span class="required">*</span></label>
+																					<input type="number" class="form-control" placeholder="Ex: 10" />
+																				</div>
+																				<div class="col-md-6">
+																					<label>Required score <span class="required">*</span></label>
+																					<input type="number" class="form-control" placeholder="Ex: 7" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-md-3 pull-right">
+																			<label>Time limit <span class="required">*</span></label>
+																			<select class="selectpicker">
+																				<option>1:00 min</option>
+																				<option>2:00 min</option>
+																				<option>5:00 min</option>
+																				<option>10:00 min</option>
+																				<option>15:00 min</option>
+																				<option>20:00 min</option>
+																				<option>25:00 min</option>
+																				<option>30:00 min</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-md-6 quizz-module">
+																			<div class="col-md-12 activation-nobg">
+																				<div class="row">
+																					<div class="col-md-12 activation-container pl-0">
+																						<div class="col-md-2 activation-switch">
+																							<div class="switch switch-mini" data-off-label="" data-on-label="">
+																								<input type="checkbox"/>
+																							</div>
+																						</div>
+																						<div class="col-md-9 activation-statement">
+																							Randomize :
+																							<span class="no">
+																								NO
+																							</span>
+																							<span class="yes">
+																								YES
+																							</span>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<p class="activation-alert">This generates a quizz made of randomly picked questions.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+							                                <div class="create-user-action col-md-12">
+							                                    <div class="divider">
+							                                        <div class="col-md-6 pl-0">
+							                                            <button class="btn btn-default full-width btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+							                                            Cancel
+							                                            </button>
+							                                        </div>
+							                                        <div class="col-md-6 pr-0">
+							                                            <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right form-control" type="button">
+							                                            Save
+							                                            </button>
+							                                        </div>
+							                                    </div>
+							                                </div>
+							                            </div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab-survey">
+												<div class="row">
+													<div class="col-md-12 question-list-container survey-container">
+														<div class="row form-group">
+															<div class="col-md-12 quizz-module">
+																<label>Survey Name <span class="required">*</span></label>
+																<input type="" class="form-control" placeholder="Type survey name" />
+															</div>
+														</div>
+														<div class="row form-group">
+															<div class="col-md-12 quizz-module">
+																<label>Tags</label>
+																<input type="text" class="form-control selectpicker" id="quizzSurveysHashtag-02" value="" placeholder="Type tags and enter" />
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 quizz-module">
+																<label>Introduction Text</label>
+																<textarea class="form-control" id="edit-textarea-normal-05" placeholder="Type description text here..." rows="3"></textarea>
+															</div>
+														</div>
+														<div class="row">
+							                                <div class="create-user-action col-md-12">
+							                                    <div class="divider">
+							                                        <div class="col-md-6 pl-0">
+							                                            <button class="btn btn-default full-width btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+							                                            Cancel
+							                                            </button>
+							                                        </div>
+							                                        <div class="col-md-6 pr-0">
+							                                            <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right form-control" type="button">
+							                                            Save
+							                                            </button>
+							                                        </div>
+							                                    </div>
+							                                </div>
+							                            </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

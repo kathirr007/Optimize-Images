@@ -1,0 +1,216 @@
+<div aria-labelledby="create-new-client-modal" class="modal fade create-new-client-modal" id="create-new-client-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                        close
+                        </i>
+                    </a>
+                </span>
+                <div class="modal-title">
+                    Create a new client
+                </div>
+                <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="clientId">
+                                    Client ID
+                                </label>
+                                <input class="form-control" id="clientId" placeholder="C017" type="text"/>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="clientName">
+                                    Client Name
+                                </label>
+                                <input class="form-control" id="clientName" placeholder="ex: Webedia, LVMH.." type="text"/>
+                            </div>
+                            <div class="col-md-3 pull-right">
+                                <label for="clientHashtag">
+                                    Client Hashtag
+                                </label>
+                                <input type="text" class="form-control selectpicker" id="clientHashtag" value="" placeholder="Type tags and enter" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row form-group">
+                        <div class="col-md-6">
+                            <label>Buisiness Tag</label>
+                            <div class="control-group">
+                                <textarea id="contract-tags"></textarea>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="form-group client-logo">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-client-logo">
+                                    Client Logo
+                                </label>
+                            </div>
+                            <div class="client-logo empty">
+                                <div class="col-md-12">
+                                    <input id="upload-client-logo" type="file"/>
+                                    <a class="add-client-logo" href="javascript:;">
+                                        <div class="col-md-12">
+                                            Add an image
+                                            <span class="d-block">
+                                                from your computer
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-12">
+                                    <a class="import-from-twitter d-block" href="javascript:;">
+                                        Or import it from twitter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group client-logo">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-client-logo">
+                                    Client Logo
+                                </label>
+                            </div>
+                            <div class="client-logo full col-md-10">
+                                <div class="col-md-3 image-container">
+                                    <img class="image-loaded" src="lbd/img/blog-1.jpg">
+                                    </img>
+                                </div>
+                                <div class="col-md-9 client-desc-container">
+                                    <div class="description">
+                                        <strong>
+                                        Twitter user:
+                                        </strong>
+                                        <a class="client-name" href="javascript:;">
+                                            @Allocine
+                                        </a>
+                                    </div>
+                                    <div class="image-action">
+                                        <a class="replace" href="javascript:;">
+                                            Replace Image
+                                        </a>
+                                        <a class="remove" href="javascript:;">
+                                            Remove image
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group divider">
+                        <div class="row">
+                            <div class="col-md-6 mb-15">
+                                <label>Choose your business unit <span class="required">*</span></label>
+                                <select class="selectpicker" data-live-search="true" title="Choose a business unit" id="">
+                                    <option data-hidden="true"></option>
+                                    <option value="0">Content for business</option>
+                                    <option value="1">Falana</option>
+                                    <option value="2">Dimca</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <label class="col-md-12" for="clientSector">
+                                    Sector
+                                </label>
+                                <div class="">
+                                    <div class="col-md-6">
+                                        <select class="chosen-default chosen-select" id="clientSector">
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                Creation & Entertainment
+                                            </option>
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                Creation
+                                            </option>
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                Entertainment
+                                            </option>
+                                            <option data-img-src="lbd/img/default-avatar.png">
+                                                Social Media
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div>
+                                <label class="col-md-12" for="clientAddress">
+                                    Address
+                                </label>
+                                <div class="">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" id="clientAddress" placeholder="-" rows="3">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div>
+                                <label class="col-md-12 control-label" for="clientCountry">
+                                    Country
+                                </label>
+                                <div class="">
+                                    <div class="col-md-4">
+                                        <select class="chosen-default chosen-select flags" id="clientCountry">
+                                            <option data-img-src="lbd/img/flag/fr.gif" value="">
+                                                France
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/in.gif" value="">
+                                                india
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/jm.gif" value="">
+                                                Jamaica
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/us.gif" value="">
+                                                US
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/uk.gif" value="">
+                                                UK
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/su.gif" value="">
+                                                Switzerland
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/es.gif" value="">
+                                                Spain
+                                            </option>
+                                            <option data-img-src="lbd/img/flag/pol.gif" value="">
+                                                Poland
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-no pull-left form-control full-width" data-dismiss="modal" type="button">
+                                Cancel
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-yes pull-right form-control full-width" type="button">
+                                Create client
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

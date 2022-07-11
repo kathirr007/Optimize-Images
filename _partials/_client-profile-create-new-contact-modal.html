@@ -1,0 +1,146 @@
+<div aria-labelledby="create-new-contact-modal" class="modal fade create-new-contact-modal" id="create-new-contact-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">
+                    <a data-dismiss="modal" href="javascript:;">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </span>
+                <div class="modal-title">
+                    Create a new contact
+                </div>
+                <form action="" class="form clearfix">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="contactName">
+                                    Contact name
+                                </label>
+                                <input class="form-control" id="contactName" placeholder="C017" type="text">
+                                </input>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="position">
+                                    Position
+                                </label>
+                                <input class="form-control" id="position" placeholder="ex: Webedia, LVMH.." type="text">
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="checkbox main-contact">
+                                    <input data-toggle="checkbox" type="checkbox">
+                                        This is the main contact
+                                    </input>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group contact-picture">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-contact-pic">
+                                    Contact Picture
+                                </label>
+                            </div>
+                            <div class="contact-pic empty">
+                                <div class="col-md-12">
+                                    <input id="upload-contact-pic" type="file">
+                                        <a class="add-contact-pic" href="javascript:;">
+                                            <div class="col-md-12">
+                                                Add an image
+                                                <span class="d-block">
+                                                    from your computer
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group contact-picture">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="upload-contact-pic">
+                                    Contact Picture
+                                </label>
+                            </div>
+                            <div class="contact-pic full col-md-10">
+                                <div class="col-md-3 image-container">
+                                    <img class="image-loaded" src="lbd/img/blog-1.jpg">
+                                    </img>
+                                </div>
+                                <div class="col-md-9 contact-desc-container">
+                                    <div class="image-action">
+                                        <a class="replace" href="javascript:;">
+                                            Replace Image
+                                        </a>
+                                        <a class="remove" href="javascript:;">
+                                            Remove image
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="contactNumber">
+                                    Phone Number
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="form-control" id="contactNumber" placeholder="-" type="text">
+                                        </input>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="form-control" id="" placeholder="" type="text">
+                                        </input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <a class="import-from-twitter d-block" href="javascript:;">
+                                    + Add phone number
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="contactEmail">
+                                    Email Address
+                                </label>
+                                <input class="form-control" id="contactEmail" placeholder="-" type="text">
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-no pull-left form-control" data-dismiss="modal" type="button">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-fill btn-wd btn-yes pull-right form-control" type="button">
+                                    Save Changes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+<div aria-labelledby="download-quote-modal" class="modal fade download-quote-modal" id="download-quote-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="edit-content clearfix">
+                    <span class="close">
+                        <a data-dismiss="modal" href="javascript:;">
+                            <i class="material-icons">
+                                close
+                            </i>
+                        </a>
+                    </span>
+                    <div class="row modal-title">
+                        Download quote
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-8">
+                            <label for="">
+                                Applied tax
+                            </label>
+                            <div class="row quote-tax-country">
+                                <div class="col-md-12">
+                                    <select class="chosen-default flags">
+                                        <option data-img-src="lbd/img/flag/us.gif">
+                                            EN (US)
+                                        </option>
+                                        <option data-img-src="lbd/img/flag/fr.gif">
+                                            FR
+                                        </option>
+                                        <option data-img-src="lbd/img/flag/uk.gif">
+                                            EN (UK)
+                                        </option>
+                                        <option data-img-src="lbd/img/flag/sp.gif">
+                                            ES
+                                        </option>
+                                        <option data-img-src="lbd/img/flag/pol.gif">
+                                            PO
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="currencyFormat">Currency </label>
+                                <select id="currencyFormat" class="selectpicker">
+                                    <option value="1">Pound (£)</option>
+                                    <option value="2">Euro (€)</option>
+                                    <option value="3">Dolar ($)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 applied-tax-container">
+                            <div class="applied-tax highlight-bg">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <span class="helper-text d-block">Applied tax</span>
+                                        <span class="main-font d-block">Quote total turnover</span>
+                                    </div>
+                                    <div class="col-md-3 estimated-days pull-right text-right">
+                                        <span class="helper-text d-block">20%</span>
+                                        <span class="main-font d-block">£ 33,925.80</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 applied-tax-container">
+                            <div class="applied-tax highlight-bg">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <span class="helper-text currency_rate d-block">New currency change rate</span>
+                                        <span class="main-font d-block">Quote turnover excl. taxes</span>
+                                        <span class="helper-text d-block">Applied tax</span>
+                                        <!-- <span class="main-font d-block">Quote total turnover</span> -->
+                                    </div>
+                                    <div class="col-md-3 estimated-days pull-right text-right">
+                                        <span class="helper-text exchange_rate currency_rate d-block">£ 0.89897</span>
+                                        <span class="main-font d-block">£ 0</span>
+                                        <span class="helper-text d-block percentage">20%</span>
+                                        <!-- <span class="main-font d-block" id="q_final_turnover" rel="0.00">£ 0.00</span> -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="border-bottom my-2"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <span class="main-font d-block">Quote total turnover</span>
+                                    </div>
+                                    <div class="col-md-3 estimated-days pull-right text-right">
+                                        <span class="main-font d-block" id="q_final_turnover" rel="0.00">£ 0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 download-quote-format">
+                            <label for="quoteFormat">Quote format </label>
+                            <div class="row">
+                                <div class="col-md-6 dropup">
+                                    <select id="quoteFormat" class="selectpicker">
+                                        <option value="1">Microsoft Excel</option>
+                                        <option value="2">Pdf</option>
+                                        <option value="3">CSV</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn btn-default btn-fill full-width btn-wd btn-yes pull-right" type="button">
+                                        Dwonload <span class="downoad-format">(XLSX)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

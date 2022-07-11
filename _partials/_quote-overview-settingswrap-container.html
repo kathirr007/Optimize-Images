@@ -1,0 +1,419 @@
+<div class="setting-wrap-container">
+    <div class="col-md-12 settings-wrap create-quote-mission-container">
+        <span class="close">
+            <a href="javascript:;">
+                <i class="material-icons">
+                close
+                </i>
+            </a>
+        </span>
+        <div class="row">
+            <div class="col-md-10 create-quote-mission-title">
+                Translation articles FR to US <span class="edit"><a href="javascript:void(0);" id="editCreateMissionTitle">Edit title</a></span>
+            </div>
+            <div class="col-md-8 create-quote-mission-title-edit">
+                <div class="input-group">
+                    <input type="text" placeholder="Edit Title" class="form-control" value="Translation articles FR to US"/>
+                    <button type="" id="saveCreateMissionTitle" class="btn btn-fill btn-wd btn-yes">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mission-type-creation">
+                <div class="row">
+                    <div class="col-md-4 mb-15">
+                        <select name="" class="selectpicker" title="Service">
+                            <option>Service 1</option>
+                            <option>Service 2</option>
+                            <option>Service 3</option>
+                            <option>Service 4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-15">
+                        <select name="" class="selectpicker" title="Mission type">
+                            <option>Mission type 1</option>
+                            <option>Mission type 2</option>
+                            <option>Mission type 3</option>
+                            <option>Mission type 4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-15">
+                        <select name="" class="selectpicker" title="Product">
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                            <option>Product 3</option>
+                            <option>Product 4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <select class="chosen-default flags">
+                            <option data-img-src="lbd/img/flag/us.gif">EN (US)</option>
+                            <option data-img-src="lbd/img/flag/fr.gif">FR</option>
+                            <option data-img-src="lbd/img/flag/uk.gif">EN (UK)</option>
+                            <option data-img-src="lbd/img/flag/sp.gif">ES</option>
+                            <option data-img-src="lbd/img/flag/pol.gif">PO</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 flags-to">
+                        <select class="chosen-default flags">
+                            <option data-img-src="lbd/img/flag/us.gif">EN (US)</option>
+                            <option data-img-src="lbd/img/flag/fr.gif">FR</option>
+                            <option data-img-src="lbd/img/flag/uk.gif">EN (UK)</option>
+                            <option data-img-src="lbd/img/flag/sp.gif">ES</option>
+                            <option data-img-src="lbd/img/flag/pol.gif">PO</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 quote-mission-edit-wizard">
+                <div class="col-md-12 progress-steps">
+                    <div id="wizardCard">
+                        <form id="wizardForm" method="" action="">
+                            <div class="tab-links">
+                                <ul class="nav">
+                                    <li><a href="#tab-mission-create-1" data-toggle="tab">Mission settings</a></li>
+                                    <li><a href="#tab-mission-create-2" data-toggle="tab">Resources and costs</a></li>
+                                    <li><a href="#tab-mission-create-3" data-toggle="tab">Selling Prices</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="tab-mission-create-1">
+                                        <div class="row">
+                                            <div class="col-md-12 tab-mission-create-settings">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <label>ITEM</label>
+                                                                        <input type="text" name="" value="200" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label>ITEMS</label>
+                                                                        <input type="text" name="" value="Development" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-10">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <label>DELIVERY TIMING TO CUSTOMER IN DAYS (!)</label>
+                                                                        <input type="text" name="" value="200" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                                    <div class="col-md-5">
+                                                                        <label>TEMPO</label>
+                                                                        <select name="" class="selectpicker" title="Tempo">
+                                                                            <option>Oneshot</option>
+                                                                            <option>Recurrent</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-10">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <label>PACKS PER DELIVERY (!)</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" value="20"/>
+                                                                            <span class="input-group-addon">packs</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label>TEMPO</label>
+                                                                        <select name="" class="selectpicker" title="Tempo">
+                                                                            <option>Fix</option>
+                                                                            <option>Max</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label>DELIVERY EVERY...</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" value="7"/>
+                                                                            <span class="input-group-addon">days</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label>MAN DAY INVOICED TO THE CUSTOMER IN HOURS</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-5">
+                                                                        <input type="text" class="form-control" value="20"/>
+                                                                    </div>
+                                                                    <div class="col-md-6 label-with-info">
+                                                                        <span class="info"><a href="javascript:;" title="Note" data-toggle="popover" data-placement="right" data-content="We consider a day = 8 working hours"><i class="material-icons">info_outline</i></a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="col-md-6">
+                                                            <div class="row">
+                                                                    <div class="col-md-4">
+                                                                            <label>MISSION VOLUME</label>
+                                                                            <input type="text" name="" value="200" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                            <label>ITEMS</label>
+                                                                            <select name="" class="selectpicker" title="Items">
+                                                                                    <option>Items 1</option>
+                                                                                    <option>Items 2</option>
+                                                                                    <option>Items 3</option>
+                                                                                    <option>Items 4</option>
+                                                                            </select>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-md-4">
+                                                                            <label>DURATION (DAYS)</label>
+                                                                            <input type="text" name="" value="40" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                                    <div class="col-md-6 label-with-info">
+                                                                            <label>DELIVERY TIMIMG</label>
+                                                                            <select name="" class="selectpicker" title="Delivery timing">
+                                                                                    <option>Delivery timing 1</option>
+                                                                                    <option>Delivery timing 2</option>
+                                                                                    <option>Delivery timing 3</option>
+                                                                                    <option>Delivery timing 4</option>
+                                                                            </select>
+                                                                    </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <div class="row">
+                                                                    <div class="col-md-3">
+                                                                            <label>NB WORDS</label>
+                                                                            <input type="text" name="" value="400" class="form-control" placeholder=""/>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-md-6">
+                                                                            <label>VOLUME PER DELIVERY</label>
+                                                                            <div class="input-group">
+                                                                                    <input type="text" class="form-control" value="20"/>
+                                                                                    <span class="input-group-addon">articles</span>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                            <label>DELIVERY EVERY...</label>
+                                                                            <div class="input-group">
+                                                                                    <input type="text" class="form-control" value="7"/>
+                                                                                    <span class="input-group-addon">days</span>
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 tab-navigation">
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-no btn-cancel-settings pull-left">Cancel</button>
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-mission-create-2">
+                                        <div class="row">
+                                            <div class="col-md-12 tab-mission-create-resources">
+                                                <div class="col-md-12 import-cost-container">
+                                                    <div class="import-cost-add">
+                                                        <strong>Import costs from old missions</strong>
+                                                        <p>Get an old mission cost as reference for your actual mission</p>
+                                                        <a href="javascript:;" type="" class="btn btn-fill btn-download" data-toggle="modal" data-target="#browseMissionModal">Browse old missions</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-12 imported-clients-container">
+                                                    <div class="col-md-9 imported-client">
+                                                        <div class="heading">Costs imported from</div>
+                                                        <div class="client-mission">
+                                                            <div class="user-image">
+                                                                <img src="lbd/img/webedia.jpg" class="img-circle"/>
+                                                            </div>
+                                                            <div class="client-desc">
+                                                                <span>LVMH</span><a href="javascript:void(0);">C007-ZVA-2019-001-LVMH-v1</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="error-message">This mission no longer available</div>
+                                                    </div>
+                                                    <div class="col-md-3 browse">
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#browseMissionModal" class="btn">Browse other missions</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 tab-mission-create-resources-list">
+                                                <div class="row">
+                                                    <div class="col-md-2 list-head">Number</div>
+                                                    <div class="col-md-4 list-head">Resource</div>
+                                                    <div class="col-md-2 col-md-offset-4 list-head">Cost</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control" value="3"/>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <select name="" class="selectpicker">
+                                                            <option>Writer</option>
+                                                            <option>Proofreader</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2 col-md-offset-4">
+                                                        <input type="text" class="form-control" value="12.00"/>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <input type="text" class="form-control" value="1"/>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <select name="" class="selectpicker">
+                                                            <option>Writer</option>
+                                                            <option>Proofreaderr</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2 col-md-offset-4">
+                                                        <input type="text" class="form-control" value="3.00"/>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <a href="javascript:void(0);" class="col-md-3">+ Add resources and costs</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 tab-navigation">
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back">Back</button>
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-next">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-mission-create-3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="col-md-12 imported-clients-container">
+                                                            <div class="col-md-9 imported-client">
+                                                                <div class="heading">Costs imported from</div>
+                                                                <div class="client-mission">
+                                                                    <div class="user-image">
+                                                                        <img src="lbd/img/webedia.jpg" class="img-circle"/>
+                                                                    </div>
+                                                                    <div class="client-desc">
+                                                                        <span>LVMH</span><a href="javascript:void(0);">C007-ZVA-2019-001-LVMH-v1</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-message">This mission no longer available</div>
+                                                            </div>
+                                                            <div class="col-md-3 browse">
+                                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#browseMissionModal" class="btn">Browse other missions</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 selling-prices-container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="price-container">
+                                                                    <div class="price-wrap">
+                                                                        <h4>Price per word</h4>
+                                                                        <div class="price-box">
+                                                                            <input type="text" value="0.14">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="price-container">
+                                                                    <div class="price-wrap">
+                                                                        <h4>Selling Price</h4>
+                                                                        <div class="price-box">
+                                                                            <input type="text" value="70.00">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="price-container">
+                                                                    <div class="price-wrap">
+                                                                        <h4>Margin</h4>
+                                                                        <div class="price-box">
+                                                                            <input type="text" value="12.615">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="price-container">
+                                                                    <div class="price-wrap">
+                                                                        <h4>Turnover</h4>
+                                                                        <div class="price-box">
+                                                                            <input type="text" value="38000.00">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 selling-total-container">
+                                                        <div class="row">
+                                                            <div class="col-md-3 free-mission-container">
+                                                                <label class="checkbox">
+                                                                    <span class="icons"><span class="first-icon fa fa-square-o"></span><span class="second-icon fa fa-check-square-o"></span></span><input type="checkbox" data-toggle="checkbox" value=""/>
+                                                                    This is free mission
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-md-4 col-md-offset-5 total-container">
+                                                                <div class="total-strike">
+                                                                    <div class="strike">
+                                                                        <span>48 500.00 &#8364;</span>
+                                                                    </div>
+                                                                    <div class="quote-total"><span>Quote Total:</span>38 000.00 &#8364;</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 tab-navigation">
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-no pull-left btn-back">Back</button>
+                                                <button type="button" class="btn btn-info btn-fill btn-wd btn-yes pull-right btn-finish" onclick="onFinishWizard()">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
