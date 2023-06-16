@@ -10,6 +10,8 @@ const $ = require("gulp-load-plugins")({
 });
 
 const browserSync = require("browser-sync").create();
+const loadGulpImage = async () => await import('gulp-image');
+
 
 const reload = browserSync.reload;
 
@@ -104,10 +106,7 @@ gulp.task("images", async () => {
     var imageFilter2 = $.filter(["**/*.+(jpg|png|tiff|webp)"], {
         restore: true,
     });
-    let image = await import('gulp-image');
-    let imagemin = await import('gulp-imagemin');
-    const { default:gulpImage } = image
-    const { default:gulpImagemin, mozjpeg, optipng } = imagemin
+
     return (
         gulp
             .src(images.in)
@@ -118,39 +117,19 @@ gulp.task("images", async () => {
             )
             .pipe($.newer(images.out))
             .pipe($.plumber())
-            /* .pipe(
-                gulpImage({
-                    jpegRecompress: [
-                        "--strip",
-                        "--quality",
-                        "medium",
-                        "--loops",
-                        10,
-                        "--min",
-                        40,
-                        "--max",
-                        80,
-                    ],
-                    mozjpeg: ["-quality", 38, "-optimize", "-progressive"],
-                    guetzli: ['--quality', 84],
-                    quiet: true,
-                })
-            ) */
-            .pipe(gulpImage({
-                jpegRecompress: ['--strip', '--quality', 'medium', '--loops', 10, '--min', 40, '--max', 80],
+            .pipe(
+                (await loadGulpImage()).default({
                 // mozjpeg: ['-quality', 50, '-optimize', '-progressive'],
                 // guetzli: ['--quality', 84],
+                optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+                pngquant: ['--speed=1', '--force', 256],
+                zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+                jpegRecompress: ['--strip', '--quality', 'medium', '--loops', 15, '--min', 30, '--max', 60],
+                mozjpeg: ['-optimize', '-progressive'],
+                gifsicle: ['--optimize'],
+                svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors'],
                 quiet: true
             }))
-            /* .pipe(gulpImagemin(
-                [
-                mozjpeg({ quality: 40, progressive: true }),
-                optipng({ optimizationLevel: 5, interlaced: null })
-                ],
-                {
-                    silent: true
-                }
-            )) */
             .pipe(
                 $.size({
                     title: "images out ",
@@ -173,7 +152,7 @@ gulp.task("optim-images", async function () {
         .pipe($.newer(images.out))
         .pipe($.plumber())
         .pipe(
-            gulpImage({
+            (await loadGulpImage()).default({
                 jpegRecompress: [
                     "--strip",
                     "--quality",
