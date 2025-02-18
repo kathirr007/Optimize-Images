@@ -1,7 +1,7 @@
 {
-    "name": "EditPlace-webapp",
+    "name": "image-optimization-with-gulp",
     "version": "1.0.0",
-    "description": "UIWorkflow for WebApp a Web Application Development for Edit Place India.",
+    "description": "Image Optimization using Gulp.js",
     "main": "index.js",
     "scripts": {
         "dev": "gulp"
@@ -11,7 +11,7 @@
         "url": "https://github.com/epworkplace/webapp-UIWorkflow.git"
     },
     "keywords": [],
-    "author": "Edit Place India",
+    "author": "Kathirr007",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/epworkplace/webapp-UIWorkflow.git/issues"
