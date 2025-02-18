@@ -1,18 +1,33 @@
 // Include gulp and plugins
-const gulp = require("gulp");
+import gulp from 'gulp'
+import * as del from 'del'
+// import $ from 'gulp-load-plugins'
+import browserSync from 'browser-sync'
+import gulpLoadPlugins from 'gulp-load-plugins';
+import path from 'path';
+import size from 'gulp-size'
+import filter from 'gulp-filter'
+import newer from 'gulp-newer'
+import preprocess from 'gulp-preprocess'
+import htmlclean from 'gulp-htmlclean'
+import plumber from 'gulp-plumber'
 
-const del = require("del");
+const __dirname = path.resolve();
 
-// pkg = require('./package.json'),
 
-const $ = require("gulp-load-plugins")({
-    lazy: true,
+const $ = gulpLoadPlugins({
+  config: path.resolve(__dirname, 'package.json'),
+//   lazy: true,
 });
 
-const browserSync = require("browser-sync").create();
+/* $({
+    lazy: true,
+}); */
+
+
+browserSync.create();
+
 const loadGulpImage = async () => await import('gulp-image');
-
-
 const reload = browserSync.reload;
 
 // file locations
@@ -77,23 +92,22 @@ gulp.task("reload", (done) => {
 gulp.task("html", () => {
     var page = gulp
         .src(html.in)
-        .pipe($.newer(html.out))
+        .pipe(newer(html.out))
         .pipe(
-            $.preprocess({
+            preprocess({
                 context: html.context,
             })
         );
-    /*.pipe($.replace(/.\jpg|\.png|\.tiff/g, '.webp'))*/
     if (!devBuild) {
         page = page
             .pipe(
-                $.size({
+                size({
                     title: "HTML in",
                 })
             )
-            .pipe($.htmlclean())
+            .pipe(htmlclean())
             .pipe(
-                $.size({
+                size({
                     title: "HTML out",
                 })
             );
@@ -103,7 +117,7 @@ gulp.task("html", () => {
 
 // manage images
 gulp.task("images", async () => {
-    var imageFilter2 = $.filter(["**/*.+(jpg|png|tiff|webp)"], {
+    var imageFilter2 = filter(["**/*.+(jpg|png|tiff|webp)"], {
         restore: true,
     });
 
@@ -111,27 +125,27 @@ gulp.task("images", async () => {
         gulp
             .src(images.in)
             .pipe(
-                $.size({
+                size({
                     title: "images in ",
                 })
             )
-            .pipe($.newer(images.out))
-            .pipe($.plumber())
+            .pipe(newer(images.out))
+            .pipe(plumber())
             .pipe(
                 (await loadGulpImage()).default({
-                // mozjpeg: ['-quality', 50, '-optimize', '-progressive'],
-                // guetzli: ['--quality', 84],
-                optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
-                pngquant: ['--speed=1', '--force', 256],
-                zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
-                jpegRecompress: ['--strip', '--quality', 'medium', '--loops', 15, '--min', 30, '--max', 60],
-                mozjpeg: ['-optimize', '-progressive'],
-                gifsicle: ['--optimize'],
-                svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors'],
-                quiet: true
-            }))
+                    // mozjpeg: ['-quality', 50, '-optimize', '-progressive'],
+                    // guetzli: ['--quality', 84],
+                    optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+                    pngquant: ['--speed=1', '--force', 256],
+                    zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+                    jpegRecompress: ['--strip', '--quality', 'medium', '--loops', 15, '--min', 30, '--max', 60],
+                    mozjpeg: ['-optimize', '-progressive'],
+                    gifsicle: ['--optimize'],
+                    svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors'],
+                    quiet: true
+                }))
             .pipe(
-                $.size({
+                size({
                     title: "images out ",
                 })
             )
@@ -141,16 +155,16 @@ gulp.task("images", async () => {
 
 gulp.task("optim-images", async function () {
     let image = await import('gulp-image');
-    const { default:gulpImage } = image
+    const { default: gulpImage } = image
     return gulp
         .src(images.in)
         .pipe(
-            $.size({
+            size({
                 title: "Total images in ",
             })
         )
-        .pipe($.newer(images.out))
-        .pipe($.plumber())
+        .pipe(newer(images.out))
+        .pipe(plumber())
         .pipe(
             (await loadGulpImage()).default({
                 jpegRecompress: [
@@ -168,7 +182,7 @@ gulp.task("optim-images", async function () {
             })
         )
         .pipe(
-            $.size({
+            size({
                 title: "Total images out ",
             })
         )
