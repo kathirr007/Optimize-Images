@@ -1,7 +1,7 @@
 // Include gulp and plugins
 import {createRequire} from 'module'
 import gulp from 'gulp';
-import del from 'del';
+import {deleteSync as del} from 'del';
 import browserSync from 'browser-sync';
 
 const require = createRequire(import.meta.url)
@@ -51,7 +51,7 @@ const syncOpts = {
 // Constants for optimization settings
 const IMAGE_OPTIMIZATION_SETTINGS = {
     optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
-    pngquant: ['--speed=1', '--force', 256],
+    pngquant: ['--speed=1', '--quality=55-80', '--force', 256],
     zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
     jpegRecompress: ['--strip', '--quality', 'medium', '--loops', 15, '--min', 30, '--max', 60],
     mozjpeg: ['-optimize', '-progressive'],
@@ -81,12 +81,12 @@ const cleanTask = (path) => async (cb) => {
 
 const imageProcessingPipeline = (settings) => {
     return gulp
-        .src(images.in)
-        .pipe($.size({ title: 'images in ' }))
+        .src(images.in, { encoding: false})
+        .pipe($.size.default({ title: 'images in ' }))
         .pipe($.newer(images.out))
         .pipe($.plumber())
         .pipe(settings)
-        .pipe($.size({ title: 'images out ' }))
+        .pipe($.size.default({ title: 'images out ' }))
         .pipe(gulp.dest(images.out));
 };
 
@@ -118,9 +118,9 @@ const processHtml = () => {
 
     if (!devBuild) {
         pipeline = pipeline
-            .pipe($.size({ title: 'HTML in' }))
+            .pipe($.size.default({ title: 'HTML in' }))
             .pipe($.htmlclean())
-            .pipe($.size({ title: 'HTML out' }));
+            .pipe($.size.default({ title: 'HTML out' }));
     }
 
     return pipeline.pipe(gulp.dest(html.out));
