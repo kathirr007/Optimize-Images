@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "description": "UIWorkflow for WebApp a Web Application Development for Edit Place India.",
     "main": "index.js",
+
+    "packageManager": "yarn@1.22.22",
     "scripts": {
         "dev": "gulp"
     },
