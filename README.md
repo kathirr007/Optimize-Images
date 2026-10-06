@@ -21,6 +21,8 @@
 ### Automations added
 
 -   **Optimize images** It will automatically optimize the images placed in "**assets/img**" folder.
+-   **Modern derivatives** `gulp images:webp` and `gulp images:avif` generate `.webp` / `.avif` siblings for JPG, PNG and TIFF sources using **sharp** (bundled libvips, no external binaries needed). `gulp images:all` runs the classic optimization plus both derivatives. Quality knobs live in the `modern` config in `gulpfile.js` (`webpOptions`, `avifOptions`).
+-   GIF (animation) and SVG (vector) sources are intentionally excluded from WebP/AVIF conversion; they are still optimized in place by the `images` task. Formats `gulp-image` doesn't handle (e.g. WebP input) pass through unmodified.
 
 ### Fix npm package gulp-image installation issue for post-install script
 
