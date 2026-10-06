@@ -4,7 +4,7 @@
     "description": "Image Optimization using Gulp.js",
     "main": "server/index.js",
     "type": "module",
-    "packageManager": "yarn@1.22.22",
+    "packageManager": "pnpm@11.25.0",
     "scripts": {
         "start": "nodemon server/index.js",
         "dev": "nodemon --watch 'server/**/*.js' server/index.js",

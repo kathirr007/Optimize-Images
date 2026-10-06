@@ -4,8 +4,8 @@
 
 ## Usage
 
--   Run `npm install`.
--   Run `gulp` or `npm run dev` for development.
+-   Run `pnpm install`.
+-   Run `gulp` or `pnpm dev` for development.
 -   Add the images you want to optimize to the folder "**assets/img**"
 -   The optimized images will be stored in the folder "**builds/development/assets/img**"
 
@@ -13,8 +13,8 @@
 
 -   Clone this repository
 -   Change the remote url
--   Run `npm install`
--   Update npm dependencies with `npm install npm-check -g` and then `npm-check -u`
+-   Run `pnpm install`
+-   Update dependencies with `pnpm dlx npm-check-updates -u`
 
 ## What is this repository for?
 
