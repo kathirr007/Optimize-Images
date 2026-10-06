@@ -30,18 +30,16 @@ const $ = gulpLoadPlugins({
 browserSync.create();
 
 const loadGulpImage = async () => await import('gulp-image');
+const loadGulpImageFork = async () => await import('gulp-image-fork');
 const reload = browserSync.reload;
 
 // file locations
-let devBuild =
-    (process.env.NODE_ENV || "development").trim().toLowerCase() !==
-    "production";
+const devBuild = (process.env.NODE_ENV || "development").trim().toLowerCase() !== "production";
 
-let source = "./";
+const source = "./";
+const dest = devBuild ? "builds/development/" : "builds/production/";
 
-let dest = devBuild ? "builds/development/" : "builds/production/";
-
-let html = {
+const html = {
     partials: [source + "_partials/**/*"],
     in: [source + "*.html"],
     watch: ["*.html", "_partials/**/*"],
@@ -51,7 +49,7 @@ let html = {
     },
 };
 
-let images = {
+const images = {
     in: [source + "assets/img/**/*"],
     out: dest + "assets/img/",
 };
@@ -65,6 +63,41 @@ let modern = {
     out: dest + "assets/img/",
     webpOptions: { quality: 80 },
     avifOptions: { quality: 50, effort: 4 },
+};
+
+// Shared optimizer settings (valid for gulp-image AND gulp-image-fork,
+// which share the same option keys). Kept here so `images` and `images2`
+// can't drift apart.
+const IMAGE_OPTIMIZATION_SETTINGS = {
+    // PNG: lossy quantize, then ONE lossless pass (optipng).
+    // zopflipng alongside optipng is redundant and very slow, and its
+    // prebuilt binary is frequently missing on Windows (ENOENT, which
+    // aborts the pipe with no output). Enable it only if its vendor
+    // binary exists: zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+    pngquant: ['--quality=45-85', '--speed=1', '--strip', '--skip-if-larger'],
+    optipng: ['-i', '1', '-strip', 'all', '-fix', '-o2', '-force'],
+    zopflipng: false,
+    // JPEG: pick ONE of jpegRecompress / mozjpeg. mozjpeg is faster and its
+    // binary ships with the npm package; jpegRecompress is stronger but slow
+    // and its binary is often missing.
+    jpegRecompress: false,
+    mozjpeg: ['-optimize', '-progressive'],
+    gifsicle: ['--optimize'],
+    // svgo expects an options object (or true), NOT a CLI args array.
+    // preset-default with removeViewBox: false keeps SVGs rendering.
+    svgo: {
+        plugins: [
+            {
+                name: 'preset-default',
+                params: {
+                    overrides: {
+                        removeViewBox: false,
+                    },
+                },
+            },
+        ],
+    },
+    quiet: true,
 };
 
 let syncOpts = {
@@ -132,6 +165,8 @@ gulp.task("html", () => {
 // NOTE (gulp 5): binary files MUST use `{ encoding: false }` on src/dest.
 // Without it gulp decodes images as UTF-8, corrupting magic bytes
 // (e.g. 0x89 -> EF BF BD) so the output won't open.
+// Settings live in IMAGE_OPTIMIZATION_SETTINGS above and are shared with
+// `images2`, so both optimizers behave identically.
 gulp.task("images", async () => {
     const { default: gulpImage } = await loadGulpImage();
 
@@ -145,41 +180,36 @@ gulp.task("images", async () => {
             )
             .pipe(newer(images.out))
             .pipe(plumber())
-            .pipe(
-                gulpImage({
-                    // PNG: lossy quantize, then ONE lossless pass (optipng).
-                    // zopflipng/pngquant+optipng together is redundant and very
-                    // slow; zopflipng's prebuilt binary is also frequently
-                    // missing on Windows (ENOENT), which aborts the pipe with
-                    // no output. Enable it only if its vendor binary exists:
-                    // zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
-                    pngquant: ['--quality=45-85', '--speed=1', '--strip', '--skip-if-larger'],
-                    optipng: ['-i', '1', '-strip', 'all', '-fix', '-o2', '-force'],
-                    zopflipng: false,
-                    // JPEG: pick ONE of jpegRecompress / mozjpeg. mozjpeg is
-                    // faster and sufficient; jpegRecompress is stronger but slow.
-                    jpegRecompress: false,
-                    mozjpeg: ['-optimize', '-progressive'],
-                    gifsicle: ['--optimize'],
-                    // svgo v2 expects an options object (or true), NOT a CLI
-                    // args array. `true` = safe defaults that keep viewBox.
-                    svgo: {
-                        plugins: [
-                            {
-                                name: 'preset-default',
-                                params: {
-                                    overrides: {
-                                        removeViewBox: false,
-                                    },
-                                },
-                            },
-                        ],
-                    },
-                    quiet: true
-                }))
+            .pipe(gulpImage(IMAGE_OPTIMIZATION_SETTINGS))
             .pipe(
                 size({
                     title: "images out ",
+                })
+            )
+            .pipe(gulp.dest(images.out, { encoding: false }))
+    );
+});
+
+// Same pipeline via gulp-image-fork (main's alternative optimizer, kept as
+// an opt-in task). Uses the same fixed settings; zopflipng/jpegRecompress
+// stay off because their vendor binaries are often missing (ENOENT).
+gulp.task("images2", async () => {
+    const { default: gulpImageFork } = await loadGulpImageFork();
+
+    return (
+        gulp
+            .src(images.in, { encoding: false })
+            .pipe(
+                size({
+                    title: "images2 in ",
+                })
+            )
+            .pipe(newer(images.out))
+            .pipe(plumber())
+            .pipe(gulpImageFork(IMAGE_OPTIMIZATION_SETTINGS))
+            .pipe(
+                size({
+                    title: "images2 out ",
                 })
             )
             .pipe(gulp.dest(images.out, { encoding: false }))
@@ -222,6 +252,8 @@ gulp.task("optim-images", async function () {
         .pipe(gulp.dest(images.out, { encoding: false }));
 });
 
+// `optimize-images` is main's name for the same JPEG-focused task.
+gulp.task("optimize-images", gulp.series("optim-images"));
 // browser sync
 gulp.task("serve", () => {
     browserSync.init(syncOpts);

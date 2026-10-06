@@ -4,6 +4,7 @@
     "description": "Image Optimization using Gulp.js",
     "main": "server/index.js",
     "type": "module",
+    "packageManager": "yarn@1.22.22",
     "scripts": {
         "start": "nodemon server/index.js",
         "dev": "nodemon --watch 'server/**/*.js' server/index.js",
@@ -72,6 +73,7 @@
         "gulp-filter": "^10.0.0",
         "gulp-htmlclean": "^2.7.22",
         "gulp-image": "^6.3.1",
+        "gulp-image-fork": "^9.2.3",
         "gulp-load-plugins": "^2.0.8",
         "gulp-newer": "^1.4.0",
         "gulp-order": "^1.2.0",
